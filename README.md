@@ -42,6 +42,9 @@ Every task easily managed through one user-friendly application.
 https://agilesoftwaredev.slack.com/messages/sprinttasktic/team/
 
 
+## **Prioritized Product Backlog :**An organized priority list is available at Final-PBI_Ordered_List.xlsx
+
+
 ## **Product Backlog**
 
 ### **SPRINT 1 :**
