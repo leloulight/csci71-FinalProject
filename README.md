@@ -74,6 +74,7 @@ As Don the Harvard student, I want to be able to recover my password so that I c
 * The system stores the categories I select and create. 
 * The system allows me to add list items into my created categories. 
 * The system allows me to delete categories I created and all tasks within that category.
+
 ---
 
 ##### **Story Title: Set user profile/preferences**
