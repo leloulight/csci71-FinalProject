@@ -1,11 +1,10 @@
-# csci71-FinalProject
-CSCI E-71 Final Project
+#CSCI E-71 Final Project
 
-GitHub URL: https://github.com/yashspatel23/csci71-FinalProject/
+*GitHub URL :* https://github.com/yashspatel23/csci71-FinalProject/
 
-Team Name : SprintTasktic
+*Team Name :* SprintTasktic
 
-Team Members: 
+*Team Members :*
 Yash Patel (Scrum Master)
 Lori Higham (Product Owner)
 Joey White (Developer)
