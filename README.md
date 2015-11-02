@@ -45,7 +45,6 @@ https://agilesoftwaredev.slack.com/messages/sprinttasktic/team/
 ## **Prioritized Product Backlog :**
 An organized priority list is available in the **Final-PBI_Ordered_List.xlsx** file (Link: https://github.com/yashspatel23/csci71-FinalProject/blob/87598fd8cea003bc2959e3f28489c871e39ce4fe/Final-PBI_Ordered_List.xlsx)
 
----
 
 ## **Product Backlog**
 
