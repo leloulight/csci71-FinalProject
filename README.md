@@ -51,7 +51,8 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 * I can log in as a unique user. 
 * I am redirected from the login page to the home page. 
 * A cookie is set on the web browser to keep session active.
- ---
+
+---
 ##### **Story Title: Support account recovery**
 **Estimate :** 3  
 As Don the Harvard student, I want to be able to recover my password so that I can gain access to the system if I forget my password.
