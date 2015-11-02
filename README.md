@@ -63,7 +63,6 @@ As Don the Harvard student, I want to be able to recover my password so that I c
 * The system stores my new login information. 
 
 ---
-
 ##### **Story Title: Create categories**
  **Estimate :** 3  
  As Sarah the Big Splash event organizer, I want to be able to create categories of list items and associate my list items with their respective categories so that I can view and work with them in aggregate.
@@ -76,7 +75,6 @@ As Don the Harvard student, I want to be able to recover my password so that I c
 * The system allows me to delete categories I created and all tasks within that category.
 
 ---
-
 ##### **Story Title: Set user profile/preferences**
 **Estimate :** 10  
 As Don the Harvard student, I want to set up a complete user profile so that I can specify when to send notifications to myself regarding tasks nearing deadlines and what options I want to include in list item preferences. 
