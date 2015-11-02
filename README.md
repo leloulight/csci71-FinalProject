@@ -100,7 +100,7 @@ As Nancy the homekeeper, I want to create new list items along with metadata abo
 * The system presents a (pre-created) list of typical items from which I can make a selection and also allows me to enter my own list items. 
 * The system stores the list items I select and create.  
 * The system allows me to delete list items.
- ---
+---
 ##### **Story Title: Mark items as done**
 **Estimate :** 1  
 As Don the Harvard student, I want to be able to mark list items as done when applicable so that the completed list items can be removed from to-do and similar lists and inserted into a tasks done page. 
