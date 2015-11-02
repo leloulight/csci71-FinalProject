@@ -18,10 +18,25 @@ SprintTasktic
 TaskrMastr
 
 ##### **Product Vision :**
-This web application will be used by users as a task organizer. Users will be able to create and manage categories for all aspects of their life (Grocery List, House Projects, Event Planning, Work tasks, etc.) and seamlessly create entries into each of these categories. With a unified location for all things to do, TaskrMastr will become your personal assistant, keeping track of all your tasks and notifying you as deadlines arrive. 
+Every task easily managed through one user-friendly application.
+
+##### **Definition of Done :**
+* Product owner signs off
+* No code smells
+* Every iteration is ready for production
+* Product requirements are fully implemented
+* Meets technical requirements
+* Meets acceptance criteria
+* Code coverage is above 90% 
+* Product passes integration and acceptance testing
+
 
 ##### **Stakeholders :**
-Students, Employers, Event organizers
+* Nancy is a homekeeper with three children who runs a small Kids' Crafts home business. 
+* Don is a Harvard student majoring in Web Design and juggles work and school. 
+* Mike is the CEO of Tech Inc. and oversees twenty-five employees. 
+* Big Splash owner Sarah is an event organizer who typically manages at least four events simultaneously.
+
 
 ##### **Slack Channel :**
 https://agilesoftwaredev.slack.com/messages/sprinttasktic/team/
