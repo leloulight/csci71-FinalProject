@@ -46,7 +46,7 @@ https://agilesoftwaredev.slack.com/messages/sprinttasktic/team/
 An organized priority list is available in the **Final-PBI_Ordered_List.xlsx** file (Link: https://github.com/yashspatel23/csci71-FinalProject/blob/87598fd8cea003bc2959e3f28489c871e39ce4fe/Final-PBI_Ordered_List.xlsx)
 
 ## **HW1 Presentation:**
-**Sprinttasktic1_Intro_11_2_2015.pptx.pdf** file (Link: https://github.com/yashspatel23/csci71-FinalProject/Sprinttasktic1_Intro_11_2_2015.pptx.pdf)
+**Sprinttasktic1_Intro_11_2_2015.pptx.pdf** file (Link: https://github.com/yashspatel23/csci71-FinalProject/blob/d03d5edd075338fa4c79e908a3b762c562eb2d5d/Sprinttasktic1_Intro_11_2_2015.pptx.pdf)
 
 
 ## **Product Backlog**
