@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6f9eb73-9d95-44dc-8b8b-cb7503bf1d3b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\yashs\Desktop\csci45-FinalProject\Project\app\css\sample-app.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yashs\Desktop\csci45-FinalProject\Project\app\js\sample-app.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/app/views/_v_template.php" afterPath="$PROJECT_DIR$/Project/app/views/_v_template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/app/controllers/c_index.php" afterPath="$PROJECT_DIR$/Project/app/controllers/c_index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/app/views/v_index_index.php" afterPath="$PROJECT_DIR$/Project/app/views/v_index_index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d6f9eb73-9d95-44dc-8b8b-cb7503bf1d3b" name="Default" comment="" />
     <ignored path="csci45-FinalProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -34,7 +27,7 @@
           <file leaf-file-name="v_index_index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Project/app/views/v_index_index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.1846002">
+                <state vertical-scroll-proportion="0.23852041">
                   <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
                   <folding>
                     <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
@@ -50,10 +43,10 @@
                 <state vertical-scroll-proportion="-8.6603775">
                   <caret line="65" column="73" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="73" />
                   <folding>
-                    <marker date="1447134489818" expanded="true" signature="1353:1458" placeholder="SELECT token..users..." />
-                    <marker date="1447134489818" expanded="true" signature="1828:1891" placeholder="SELECT email..users..." />
-                    <marker date="1447134489818" expanded="true" signature="1952:2024" placeholder="SELECT usern..users..." />
-                    <marker date="1447134489818" expanded="true" signature="2781:2895" placeholder="SELECT token..users..." />
+                    <marker date="1447135152044" expanded="true" signature="1353:1458" placeholder="SELECT token..users..." />
+                    <marker date="1447135152044" expanded="true" signature="1828:1891" placeholder="SELECT email..users..." />
+                    <marker date="1447135152044" expanded="true" signature="1952:2024" placeholder="SELECT usern..users..." />
+                    <marker date="1447135152044" expanded="true" signature="2781:2895" placeholder="SELECT token..users..." />
                   </folding>
                 </state>
               </provider>
@@ -96,7 +89,7 @@
           <file leaf-file-name="taskrmastr.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Project/app/css/taskrmastr.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.574591">
+                <state vertical-scroll-proportion="0.73703706">
                   <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
                   <folding />
                 </state>
@@ -121,9 +114,9 @@
         <option value="$PROJECT_DIR$/Project/app/views/v_login_index.php" />
         <option value="$PROJECT_DIR$/Project/app/css/taskrmastr.css" />
         <option value="$PROJECT_DIR$/Project/app/controllers/c_index.php" />
-        <option value="$PROJECT_DIR$/Project/app/views/v_index_index.php" />
         <option value="$PROJECT_DIR$/Project/app/controllers/c_signup.php" />
         <option value="$PROJECT_DIR$/Project/app/views/v_signup_index.php" />
+        <option value="$PROJECT_DIR$/Project/app/views/v_index_index.php" />
       </list>
     </option>
   </component>
@@ -139,10 +132,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-19" />
+    <option name="y" value="58" />
     <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -389,8 +382,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-19" y="58" width="1936" height="947" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -446,10 +439,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
-            <marker date="1447134489818" expanded="true" signature="1353:1458" placeholder="SELECT token..users..." />
-            <marker date="1447134489818" expanded="true" signature="1828:1891" placeholder="SELECT email..users..." />
-            <marker date="1447134489818" expanded="true" signature="1952:2024" placeholder="SELECT usern..users..." />
-            <marker date="1447134489818" expanded="true" signature="2781:2895" placeholder="SELECT token..users..." />
+            <marker date="1447135152044" expanded="true" signature="1353:1458" placeholder="SELECT token..users..." />
+            <marker date="1447135152044" expanded="true" signature="1828:1891" placeholder="SELECT email..users..." />
+            <marker date="1447135152044" expanded="true" signature="1952:2024" placeholder="SELECT usern..users..." />
+            <marker date="1447135152044" expanded="true" signature="2781:2895" placeholder="SELECT token..users..." />
           </folding>
         </state>
       </provider>
@@ -570,7 +563,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/app/css/taskrmastr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.574591">
+        <state vertical-scroll-proportion="0.73703706">
           <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
           <folding />
         </state>
@@ -613,17 +606,17 @@
         <state vertical-scroll-proportion="-8.6603775">
           <caret line="65" column="73" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="73" />
           <folding>
-            <marker date="1447134489818" expanded="true" signature="1353:1458" placeholder="SELECT token..users..." />
-            <marker date="1447134489818" expanded="true" signature="1828:1891" placeholder="SELECT email..users..." />
-            <marker date="1447134489818" expanded="true" signature="1952:2024" placeholder="SELECT usern..users..." />
-            <marker date="1447134489818" expanded="true" signature="2781:2895" placeholder="SELECT token..users..." />
+            <marker date="1447135152044" expanded="true" signature="1353:1458" placeholder="SELECT token..users..." />
+            <marker date="1447135152044" expanded="true" signature="1828:1891" placeholder="SELECT email..users..." />
+            <marker date="1447135152044" expanded="true" signature="1952:2024" placeholder="SELECT usern..users..." />
+            <marker date="1447135152044" expanded="true" signature="2781:2895" placeholder="SELECT token..users..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/app/views/v_index_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1846002">
+        <state vertical-scroll-proportion="0.23852041">
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Oct 30, 2015 at 01:25 AM
+-- Generation Time: Nov 10, 2015 at 06:01 AM
 -- Server version: 5.5.41-log
 -- PHP Version: 5.6.8
 
@@ -31,17 +31,17 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `phonenumber` int(20) NOT NULL,
-  `created` varchar(255) NOT NULL,
-  `token` varchar(255) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `token` varchar(255) NOT NULL,
+  `created` varchar(255) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `email`, `username`, `password`, `phonenumber`, `created`, `token`) VALUES
-(1, 'yash.spatel23@gmail.com', 'yashpatel', 'ab9c4dd27fcc9940e103afdb514824c12458d2c5', 0, '1446167091', '446b6d91cf4a6bee049cc69257ace4ac9be515d6');
+INSERT INTO `users` (`user_id`, `email`, `username`, `password`, `token`, `created`) VALUES
+(2, 'yash.spatel23@gmail.com', 'yashspatel23', 'ac48841e69a96c9d86ca46225a758b89f9e5ae14', '8f97f18174f6937234a1f5e70fec0d7e0a969881', '1446935587'),
+(3, 'yashpatel428@gmail.com', 'yash.spatel23', 'ab9c4dd27fcc9940e103afdb514824c12458d2c5', 'c0c7a8c46e0d31313d9457b9f225e91f9e999e10', '1447135096');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +61,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
