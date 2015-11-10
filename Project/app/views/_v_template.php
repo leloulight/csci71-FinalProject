@@ -7,6 +7,14 @@
 					
 	<!-- Controller Specific JS/CSS -->
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
+
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/taskrmastr.css">
+
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/taskrmastr.js"></script>
 	
 </head>
 
