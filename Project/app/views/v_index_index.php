@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="navbar-collapse">
-                    <form class="navbar-form pull-right" method="POST" action="/index/login">
+                    <form class="navbar-form pull-right" method="POST" action="/users/p_login">
                         <input type="email" name="email" class="form-control" placeholder="Email" required>
                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                         <input type="submit" value="Login" class="btn btn-success"/>
@@ -51,7 +51,7 @@
                 <div class="signup_home">
                     <h2>Sign Up</h2>
                     <p>It's free and always will be.</p>
-                    <form method="POST" action="/index/signup" id="signup_form">
+                    <form method="POST" action="/users/p_signup" id="signup_form">
                         <input type="text" name="username" placeholder="Username" class="form-control" required>
                         <input type="email" name="email" placeholder="Email" class="form-control" required>
                         <input type="password" name="password" placeholder="Password" class="form-control" required>

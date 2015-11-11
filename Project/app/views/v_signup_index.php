@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="login_form">
-                    <form method="POST" action="/index/signup" id="signup_form">
+                    <form method="POST" action="/users/p_signup" id="signup_form">
                         <input type="text" name="username" placeholder="Username" class="form-control" required>
                         <input type="email" name="email" placeholder="Email" class="form-control" required>
                         <input type="password" name="password" placeholder="Password" class="form-control" required>

@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="login_form">
-                    <form method="POST" action="/index/login">
+                    <form method="POST" action="/users/p_login">
                         <input type="email" name="email" class="form-control" placeholder="Email" required>
                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                         <input type="submit" value="Login" class="btn btn-success"/>
