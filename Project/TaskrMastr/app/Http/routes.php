@@ -12,5 +12,28 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if(Auth::check()) {
+        return Redirect::intended('/home');
+    }
+    return view('pages.main');
+});
+
+
+Route::get('auth/login', function() {
+    return view('pages.login');
+});
+
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+
+
+
+Route::get('/home', function() {
+    if(Auth::check()) {
+        return view('pages.home', ['name' => Auth::user()->name]);
+    }
+    return Redirect::intended('/');
 });

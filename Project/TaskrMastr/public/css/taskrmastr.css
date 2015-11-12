@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.navbar-logo {
+    padding: 9px 10px 0px 15px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.jumbotron {
+    text-align: center;
+    background: url(../images/landing.jpg) no-repeat;
+    background-size: 100%;
+    color: #e3e3e3;
+}
+
+.alert {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+
+.app_info {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.2em;
+}
+
+.signup_home {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.3em;
+    float: right;
+}
+
+.signup_home input {
+    margin-bottom: 15px;
+    max-width: 500px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+.app_info_one img {
+    height: 60px;
+}
+
+.app_info_two img {
+    height: 47px;
+    padding-right: 10px;
+    padding-left: 3px;
+}
+
+.app_info_three img {
+    height: 50px;
+    padding-right: 9px;
+    padding-left: 3px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    height: 25px;
+    background-color: #2d2d2d;
+    width: 100%;
+    color: #e3e3e3;
+    font-size: 1em;
+    text-align: center;
+}
+
+#form_error {
+    border: 1px solid #dd3c10;
+    background-color: #ffebe8;
+    padding: 20px 20px;
+}
+
+#error {
+    font-weight: bold;
+}
+
+.login_form {
+    margin-top: 20px;
+}
+
+.login_form input {
+    margin-bottom: 15px;
+}
+
+.login_container {
+    width: 90%;
+    max-width: 1052px;
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login_container h4 {
+    font-weight: bold;
+}
