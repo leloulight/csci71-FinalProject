@@ -11,9 +11,15 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicExample()
+    public function testHomePage()
     {
         $this->visit('/')
-             ->see('Laravel 5');
+             ->see('Welcome to TaskrMastr!');
+    }
+
+    public function testLoginPage()
+    {
+        $this->visit('/auth/login')
+            ->see('TaskrMastr Login');
     }
 }
