@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61384b44-ef87-450d-89bb-7a7519ef57e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/TaskrMastr/app/Http/routes.php" afterPath="$PROJECT_DIR$/Project/TaskrMastr/app/Http/routes.php" />
-    </list>
+    <list default="true" id="61384b44-ef87-450d-89bb-7a7519ef57e7" name="Default" comment="" />
     <ignored path="csci45-FinalProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -92,8 +90,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="2140" />
-    <option name="y" value="526" />
+    <option name="x" value="1981" />
+    <option name="y" value="208" />
     <option name="width" value="1936" />
     <option name="height" value="945" />
   </component>
@@ -298,7 +296,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2140" y="526" width="1936" height="945" extended-state="0" />
+    <frame x="1981" y="208" width="1936" height="945" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
