@@ -15,6 +15,7 @@ Route::get('/', function () {
     if(Auth::check()) {
         return Redirect::intended('/home');
     }
+    
     return view('pages.main');
 });
 
