@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('auth/login', function() {
     return view('pages.login');
-    
+
 });
 
 Route::post('auth/login', 'Auth\AuthController@postLogin');
