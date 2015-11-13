@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61384b44-ef87-450d-89bb-7a7519ef57e7" name="Default" comment="" />
+    <list default="true" id="61384b44-ef87-450d-89bb-7a7519ef57e7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/TaskrMastr/app/Http/routes.php" afterPath="$PROJECT_DIR$/Project/TaskrMastr/app/Http/routes.php" />
+    </list>
     <ignored path="csci45-FinalProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -45,8 +47,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/TaskrMastr/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2826087">
-              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.3043478">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -604,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/TaskrMastr/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2826087">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.3043478">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding />
         </state>
       </provider>
