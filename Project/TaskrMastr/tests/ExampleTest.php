@@ -12,7 +12,6 @@ class ExampleTest extends TestCase
              ->see('Welcome to TaskrMastr!');
 
     }
-
     public function testLoginPage()
     {
         $this->visit('/auth/login')
