@@ -61,8 +61,10 @@ class RoutesTest extends TestCase
             ->seePageIs('/');
     }
 
-
-    public function testFailedLogin() {
+    /**
+     * Test to check that when trying to login with wrong email displays errors message.
+     */
+    public function testFailedLoginWithWrongEmail() {
         $this->visit('/auth/login')
             ->type('emaildoesnotexist@gmail.com', 'email')
             ->type('testing', 'password')
@@ -70,11 +72,55 @@ class RoutesTest extends TestCase
             ->see('These credentials do not match our records');
     }
 
+    /**
+     * Test to check that when trying to login with wrong password displays errors message.
+     */
+    public function testFailedLoginWithWrongPassword() {
+        $this->visit('/auth/login')
+            ->type('test@gmail.com', 'email')
+            ->type('WrongPassword', 'password')
+            ->press('Login')
+            ->see('These credentials do not match our records');
+    }
 
-    //Test error on signup
-        //error caused by email exists -> FUNCTION
-        //error caused by username exists _> FUNCTION
-        //error caused by not matching passwords -> FUNCTION
+    /**
+     * Test to check that when singing up with email that already exists in the database displays errors message.
+     */
+    public function testFailedSignupEmailExists() {
+        $this->visit('/auth/register')
+            ->type('testUser2', 'name')
+            ->type('test@gmail.com', 'email')
+            ->type('somePassword', 'password')
+            ->type('somePassword', 'password_confirmation')
+            ->press('Sign Up')
+            ->see('The email has already been taken');
+    }
+
+    /**
+     * Test to check that when singing up with username that already exists in the database displays errors message.
+     */
+    public function testFailedSignupUsernameExists() {
+        $this->visit('/auth/register')
+            ->type('testUser', 'name')
+            ->type('test2@gmail.com', 'email')
+            ->type('somePassword', 'password')
+            ->type('somePassword', 'password_confirmation')
+            ->press('Sign Up')
+            ->see('The name has already been taken.');
+    }
+
+    /**
+     * Test to check that when during sing up for a new account second password does not match displays errors message.
+     */
+    public function testFailedSignupNotMatchingPasswords() {
+        $this->visit('/auth/register')
+            ->type('testUser2', 'name')
+            ->type('test2@gmail.com', 'email')
+            ->type('somePassword', 'password')
+            ->type('somePasswordNotMatching', 'password_confirmation')
+            ->press('Sign Up')
+            ->see('The password confirmation does not match.');
+    }
 
     //Test successful signup -> FUNCTION
         //generate a random string and prepend to the email address.
