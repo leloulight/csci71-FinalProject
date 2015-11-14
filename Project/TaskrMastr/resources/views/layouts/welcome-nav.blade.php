@@ -10,36 +10,10 @@
 
         <div class="navbar-collapse">
 
-        <form class="navbar-form pull-right" role="form" method="POST" action="/auth/login">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-            <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
-            <input type="password" class="form-control" name="password" placeholder="Password">
-            <input type="checkbox" name="remember" checked hidden>
-            <input type="submit" class="btn btn-success" value="Login">
-        </form>
-
-
-
-
-
-            <!--<form class="navbar-form pull-right" method="POST" action="/auth/login">
-                <input type="email" name="email" class="form-control" placeholder="Email" required>
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
-                <input type="submit" value="Login" class="btn btn-success"/>
-            </form>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/auth/login">Login</a></li>
+                <li><a href="/auth/register">Sign Up</a></li>
+            </ul>
 
         </div>
     </div>

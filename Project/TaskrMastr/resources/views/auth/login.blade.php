@@ -2,16 +2,23 @@
 
 @section('title', 'Login')
 
-@include('layouts.simple-nav')
+@include('layouts.welcome-nav')
 
 @section('content')
     <div class="login_container">
         <div class="container">
             <h4>TaskrMastr Login</h4>
-            <div id="form_error">
-                <p id="error">Email or password is incorrect. Please try again.</p>
-                <p>Forgot your password? Reset here.</p>
-            </div>
+
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
 
             <div class="login_form">
                 <form role="form" method="POST" action="/auth/login">
