@@ -60,4 +60,29 @@ class RoutesTest extends TestCase
         $this->visit('/home')
             ->seePageIs('/');
     }
+
+
+    public function testFailedLogin() {
+        $this->visit('/auth/login')
+            ->type('emaildoesnotexist@gmail.com', 'email')
+            ->type('testing', 'password')
+            ->press('Login')
+            ->see('These credentials do not match our records');
+    }
+
+
+    //Test error on signup
+        //error caused by email exists -> FUNCTION
+        //error caused by username exists _> FUNCTION
+        //error caused by not matching passwords -> FUNCTION
+
+    //Test successful signup -> FUNCTION
+        //generate a random string and prepend to the email address.
+        //use generated string for username
+        //keep password as testing
+        //confirm password as testing
+        //create account
+        // confirm by seeing home page
+
+
 }
