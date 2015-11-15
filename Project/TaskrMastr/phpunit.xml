@@ -15,8 +15,18 @@
         </testsuite>
     </testsuites>
     <filter>
-        <whitelist>
+        <whitelist processUncoveredFilesFromWhitelist="false">
             <directory suffix=".php">app/</directory>
+            <exclude>
+                <directory suffix=".php">app/Console/Commands</directory>
+                <directory suffix=".php">app/Exceptions</directory>
+                <directory suffix=".php">app/Http/Middleware</directory>
+                <directory suffix=".php">app/Http/Controllers/Auth</directory>
+                <file>Authenticate.php</file>
+                <file>Inspire.php</file>
+                <file>Handler.php</file>
+                <file>PasswordController.php</file>
+            </exclude>
         </whitelist>
     </filter>
     <php>

@@ -122,13 +122,18 @@ class RoutesTest extends TestCase
             ->see('The password confirmation does not match.');
     }
 
-    //Test successful signup -> FUNCTION
-        //generate a random string and prepend to the email address.
-        //use generated string for username
-        //keep password as testing
-        //confirm password as testing
-        //create account
-        // confirm by seeing home page
-
+    /**
+     * Test to check that a new user can successfully signup.
+     */
+    public function testSuccessfulSignup() {
+        $testUser=uniqid('SignupTest_');
+        $this->visit('/auth/register')
+            ->type($testUser, 'name')
+            ->type($testUser . '@gmail.com', 'email')
+            ->type('somePassword', 'password')
+            ->type('somePassword', 'password_confirmation')
+            ->press('Sign Up')
+            ->see('Hello, ' . $testUser);
+    }
 
 }
