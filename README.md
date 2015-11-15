@@ -31,6 +31,19 @@ Every task easily managed through one user-friendly application.
 * Product passes integration and acceptance testing
 
 
+##### **Definition of Done :**
+* Product owner signs off
+* No code smells
+* Every iteration is ready for production
+* Product requirements are fully implemented
+* Meets technical requirements
+* Meets acceptance criteria
+* Code coverage is above 90% 
+* Product passes integration and acceptance testing
+ 
+##### **Definition of Ready :**
+* 
+
 ##### **Stakeholders :**
 * Nancy is a homekeeper with three children who runs a small Kids' Crafts home business. 
 * Don is a Harvard student majoring in Web Design and juggles work and school. 
