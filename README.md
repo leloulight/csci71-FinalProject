@@ -170,7 +170,7 @@ The system can compute the numerical value of each task in relation to that of t
 ---
 ---
 ### **SPRINT 3 :**
-#### *(Total Points : 23)*
+#### *(Total Points : 20)*
 ---
 ##### **Story Title: Create burndown chart visualizations / analytics**
 **Estimate :** 10  
@@ -192,6 +192,20 @@ As Sarah the Big Splash event organizer, I want to be able to send email reminde
 * Email alerts preferences can be updated in the user profile/preferences page.
 
 ---
+##### **Story Title: Create Text reminders for each item**
+**Estimate :** 5  
+As Sarah the Big Splash event organizer, I want to be able to send text reminders to myself and/or other assigned users on my team whenever a list item is assigned or is near a due or suspense date so that I can be aware of items and deadlines via mobile phone.
+
+**Acceptance Criteria :**
+* System generates a “no phone number on file” error if I attempt to set preference to send text messages to a user who has not included a phone number in his/her profile.
+* System automatically generates text messages based on preset list item criteria. 
+* By default, system sends reminder one day before task is due to the person responsible for the task.
+
+---
+---
+### **SPRINT 4 :**
+#### *(Total Points : 28)*
+---
 ##### **Story Title: Create search tool for use on all metadata items**
 **Estimate :** 5  
 As Mike the Tech Inc. employer, I want to be able to find tasks with particular values in task metadata fields so that I can quickly view only those tasks in my selected field that I want to see based on my search context.
@@ -211,27 +225,13 @@ As Sarah the Big Splash event organizer, I want to be able to assign list items 
 * Other users see a view of tasks I’ve assigned to them. 
 
 ---
----
-### **SPRINT 4 :**
-#### *(Total Points : 25)*
----
 ##### **Story Title: Create individual calendar visual**
-**Estiamte :** 10  
+**Estimate :** 10  
 As Nancy the homekeeper, I want to be able to see a visual calendar of all list items and tasks that I’ve created so that I can see the entire scope and timeline of my goals.
 
 **Acceptance Criteria :**
 * Calendar visual large enough to present days of the month.
 * Days should include task name. 
-
----
-##### **Story Title: Create Text reminders for each item**
-**Estimate :** 5  
-As Sarah the Big Splash event organizer, I want to be able to send text reminders to myself and/or other assigned users on my team whenever a list item is assigned or is near a due or suspense date so that I can be aware of items and deadlines via mobile phone.
-
-**Acceptance Criteria :**
-* System generates a “no phone number on file” error if I attempt to set preference to send text messages to a user who has not included a phone number in his/her profile.
-* System automatically generates text messages based on preset list item criteria. 
-* By default, system sends reminder one day before task is due to the person responsible for the task.
 
 ---
 ##### **Story Title: Export to Excel**
