@@ -30,16 +30,6 @@ Every task easily managed through one user-friendly application.
 * Code coverage is above 90% 
 * Product passes integration and acceptance testing
 
-
-##### **Definition of Done :**
-* Product owner signs off
-* No code smells
-* Every iteration is ready for production
-* Product requirements are fully implemented
-* Meets technical requirements
-* Meets acceptance criteria
-* Code coverage is above 90% 
-* Product passes integration and acceptance testing
  
 ##### **Definition of Ready :**
 * 
@@ -60,6 +50,11 @@ An organized priority list is available in the **Final-PBI_Ordered_List.xlsx** h
 
 ## **HW1 Presentation:**
 **Sprinttasktic1_Intro_11_2_2015.pptx.pdf** file (Link: https://github.com/yashspatel23/csci71-FinalProject/blob/d03d5edd075338fa4c79e908a3b762c562eb2d5d/Sprinttasktic1_Intro_11_2_2015.pptx.pdf)
+
+## **Feedback from users after Sprint 1:
+Some don't care about having a calendar or about sharing tasks/making tasks private. However, all say it is essential to be able to push to their mobile devices. This feedback changed our product backlog in that we've reprioritized mobile notifications, bumping that item from Sprint 4 to Sprint 3. 
+
+Other feedback is that they would like integration with Jira. Slack integration is included as a future backlog item, so we've now also included Jira integration as a user story. Both Slack and Jira will likely fall outside the scope of what we can do in the next 4 weeks, but it is good to know for future reference. 
 
 
 ## **Product Backlog**
@@ -331,6 +326,15 @@ As Mike the Tech Inc. employer, I want to be able to set up my slack account as 
 **Acceptance Criteria :**
 * System allows linking of external communication channels.
 * Creation of new elements in TaskrMastr automatically generates updates in Slack. 
+
+---
+##### **Story Title: Support Slack integration**
+**Estimate :** 20  
+As Mike the Tech Inc. employer, I want to be able to set up my jira account as a communication channel for list and task creation and notifications so that I can work with a project team using one integrated collaboration tool with one interface.
+
+**Acceptance Criteria :**
+* System allows linking of external communication channels.
+* Creation of new elements in TaskrMastr automatically generates updates in Jira. 
 
 ---
 ##### **Story Title: Remind me when I am at (Geofencing)**
