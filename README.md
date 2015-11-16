@@ -32,7 +32,7 @@ Every task easily managed through one user-friendly application.
 
  
 ##### **Definition of Ready :**
-* User Stories are defined and written
+* User stories are defined and written
 * Business requirements for the user stories going into increment are fully understood
 * Acceptance criteria for increment user stories are defined
 * Dependencies are identified
