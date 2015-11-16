@@ -1,5 +1,15 @@
 # CSCI E-71 Final Project
 
+### November 16 Update
+URL of working product increment video : https://www.youtube.com/watch?v=yA-L5F2J2Wg&feature=youtu.be
+
+Code Coverage : 
+
+Unit Tests Result : 
+
+--- 
+
+
 ##### **GitHub URL :**
 https://github.com/yashspatel23/csci71-FinalProject/
 
@@ -20,17 +30,36 @@ TaskrMastr
 ##### **Product Vision :**
 Every task easily managed through one user-friendly application.
 
+
+##### **Definition of Ready :**
+* Is immediately actionable by the team
+* Has been talked through by the team and the product owner (Before sprint planning)
+* Business requirements for the user stories going into increment are fully understood
+* Every item has value
+* Every item is testable
+* User stories are divided into tasks and estimated by the development team
+* Is properly sized for the team
+* User stories are defined and written
+* Acceptance criteria for increment user stories are defined
+* Dependencies are identified
+* The stakeholders for user stories are identified
+* The team agrees on user stories going into increment and understands how to demo them
+
+
 ##### **Definition of Done :**
-* Product owner signs off
+* Successful integration into the build
 * No code smells
+* User experience tested
 * Every iteration is ready for production
 * Product requirements are fully implemented
 * Meets technical requirements
 * Meets acceptance criteria
+* Product passes integration, performance, and acceptance testing
 * Code coverage is above 90% 
-* Product passes integration and acceptance testing
+* Nothing more needs to be completed for an increment to be taken into production
+* Product owner signs off
 
-
+ 
 ##### **Stakeholders :**
 * Nancy is a homekeeper with three children who runs a small Kids' Crafts home business. 
 * Don is a Harvard student majoring in Web Design and juggles work and school. 
@@ -48,6 +77,12 @@ An organized priority list is available in the **Final-PBI_Ordered_List.xlsx** h
 ## **HW1 Presentation:**
 **Sprinttasktic1_Intro_11_2_2015.pptx.pdf** file (Link: https://github.com/yashspatel23/csci71-FinalProject/blob/d03d5edd075338fa4c79e908a3b762c562eb2d5d/Sprinttasktic1_Intro_11_2_2015.pptx.pdf)
 
+## **Feedback from Users after Sprint 1:**
+Some stakeholders don't care about having a calendar or about sharing tasks/making tasks private. However, all say it is essential to be able to push to their mobile devices. This feedback changed our product backlog in that we've reprioritized mobile notifications, bumping that item from Sprint 4 to Sprint 3. 
+
+Other feedback is that they would like integration with Jira and would like to have the option of video conferencing within the application. Slack integration is included as a future backlog item, so we've now also included Jira integration as a user story. Both Slack and Jira will likely fall outside the scope of what we can do in the next 4 weeks, but it is good to know for future reference. Video conferencing is a great idea, and we've added it to our user stories for future development, but it, too, falls outside the scope of what we can accomplish in the next two sprints. 
+
+*Note that our evening meeting Monday, November 16 after class will be our sprint planning session for the next two weeks. Because setting up everyone's IDEs and PHPUnit testing took so long, we will need to revamp our product backlog for the next two sprint sessions based on what we accomplished in Sprint 1. We will also likely update our product backlog for Sprints 4 and 5 (even though we will not actually get to them) and move at least one item out to future sprints. 
 
 ## **Product Backlog**
 
@@ -157,7 +192,7 @@ The system can compute the numerical value of each task in relation to that of t
 ---
 ---
 ### **SPRINT 3 :**
-#### *(Total Points : 23)*
+#### *(Total Points : 20)*
 ---
 ##### **Story Title: Create burndown chart visualizations / analytics**
 **Estimate :** 10  
@@ -179,6 +214,20 @@ As Sarah the Big Splash event organizer, I want to be able to send email reminde
 * Email alerts preferences can be updated in the user profile/preferences page.
 
 ---
+##### **Story Title: Create Text reminders for each item**
+**Estimate :** 5  
+As Sarah the Big Splash event organizer, I want to be able to send text reminders to myself and/or other assigned users on my team whenever a list item is assigned or is near a due or suspense date so that I can be aware of items and deadlines via mobile phone.
+
+**Acceptance Criteria :**
+* System generates a “no phone number on file” error if I attempt to set preference to send text messages to a user who has not included a phone number in his/her profile.
+* System automatically generates text messages based on preset list item criteria. 
+* By default, system sends reminder one day before task is due to the person responsible for the task.
+
+---
+---
+### **SPRINT 4 :**
+#### *(Total Points : 28)*
+---
 ##### **Story Title: Create search tool for use on all metadata items**
 **Estimate :** 5  
 As Mike the Tech Inc. employer, I want to be able to find tasks with particular values in task metadata fields so that I can quickly view only those tasks in my selected field that I want to see based on my search context.
@@ -198,27 +247,13 @@ As Sarah the Big Splash event organizer, I want to be able to assign list items 
 * Other users see a view of tasks I’ve assigned to them. 
 
 ---
----
-### **SPRINT 4 :**
-#### *(Total Points : 25)*
----
 ##### **Story Title: Create individual calendar visual**
-**Estiamte :** 10  
+**Estimate :** 10  
 As Nancy the homekeeper, I want to be able to see a visual calendar of all list items and tasks that I’ve created so that I can see the entire scope and timeline of my goals.
 
 **Acceptance Criteria :**
 * Calendar visual large enough to present days of the month.
 * Days should include task name. 
-
----
-##### **Story Title: Create Text reminders for each item**
-**Estimate :** 5  
-As Sarah the Big Splash event organizer, I want to be able to send text reminders to myself and/or other assigned users on my team whenever a list item is assigned or is near a due or suspense date so that I can be aware of items and deadlines via mobile phone.
-
-**Acceptance Criteria :**
-* System generates a “no phone number on file” error if I attempt to set preference to send text messages to a user who has not included a phone number in his/her profile.
-* System automatically generates text messages based on preset list item criteria. 
-* By default, system sends reminder one day before task is due to the person responsible for the task.
 
 ---
 ##### **Story Title: Export to Excel**
@@ -320,14 +355,23 @@ As Mike the Tech Inc. employer, I want to be able to set up my slack account as 
 * Creation of new elements in TaskrMastr automatically generates updates in Slack. 
 
 ---
+##### **Story Title: Support Slack integration**
+**Estimate :** 20  
+As Mike the Tech Inc. employer, I want to be able to set up my jira account as a communication channel for list and task creation and notifications so that I can work with a project team using one integrated collaboration tool with one interface.
+
+**Acceptance Criteria :**
+* System allows linking of external communication channels.
+* Creation of new elements in TaskrMastr automatically generates updates in Jira. 
+
+---
 ##### **Story Title: Remind me when I am at (Geofencing)**
 **Estimate :** 10  
 As Mike the Tech Inc. employer, I want to be able to view list items and reminders in the context of my geo-location so that the items I see are only those appropriate for my location.
 
 **Acceptance Criteria :**
-* The system includes “assign geolocation” as a preference option for list items. 
-* The system includes “assign geolocation” as a preference option for user profile.
-* The system generates appropriate list views and reminders based on my preset preferences. 
+* System includes “assign geolocation” as a preference option for list items. 
+* System includes “assign geolocation” as a preference option for user profile.
+* System generates appropriate list views and reminders based on my preset preferences. 
 
 ---
 ##### **Story Title: iOS and Android application support**
@@ -339,3 +383,11 @@ As Mike the Tech Inc. employer, I want to be able to interact with the system vi
 * System is scaled to support mobile design restrictions. 
 
 ---
+##### **Story Title: Video conferencing from within the application**
+**Estimate :** 40  
+As Don the Harvard student, I want to be able to use TaskrMastr for my videoconferencing needs so that not only my task notifications but also my communication can be easily managed from within one application. 
+
+**Acceptance Criteria :**
+* Where appropriate, the system includes a link for video conferencing along with the relevant task item.
+* System is scaled to support video connection. 
+* Participants of a video conference meeting can be automatically notified of a meeting, along with a link. 
