@@ -32,7 +32,16 @@ Every task easily managed through one user-friendly application.
 
  
 ##### **Definition of Ready :**
-* 
+* User Stories are defined and written
+* Business requirements for the user stories going into increment are fully understood
+* Acceptance criteria for increment user stories are defined
+* Dependencies are identified
+* User stories are divided into tasks and estimated by the development team
+* The stakeholders for user stories are identified
+* The team understands user stories and how to demo them
+* The team agrees on user stories going into increment and feels comfortable with them 
+* The team has a rough understanding of the architecture and implementation method for each item
+
 
 ##### **Stakeholders :**
 * Nancy is a homekeeper with three children who runs a small Kids' Crafts home business. 
