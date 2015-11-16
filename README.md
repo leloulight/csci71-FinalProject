@@ -359,9 +359,9 @@ As Mike the Tech Inc. employer, I want to be able to set up my jira account as a
 As Mike the Tech Inc. employer, I want to be able to view list items and reminders in the context of my geo-location so that the items I see are only those appropriate for my location.
 
 **Acceptance Criteria :**
-* The system includes “assign geolocation” as a preference option for list items. 
-* The system includes “assign geolocation” as a preference option for user profile.
-* The system generates appropriate list views and reminders based on my preset preferences. 
+* System includes “assign geolocation” as a preference option for list items. 
+* System includes “assign geolocation” as a preference option for user profile.
+* System generates appropriate list views and reminders based on my preset preferences. 
 
 ---
 ##### **Story Title: iOS and Android application support**
@@ -373,3 +373,11 @@ As Mike the Tech Inc. employer, I want to be able to interact with the system vi
 * System is scaled to support mobile design restrictions. 
 
 ---
+##### **Story Title: Video conferencing from within the application**
+**Estimate :** 40  
+As Don the Harvard student, I want to be able to use TaskrMastr for my videoconferencing needs so that not only my task notifications but also my communication can be easily managed from within one application. 
+
+**Acceptance Criteria :**
+* Where appropriate, the system includes a link for video conferencing along with the relevant task item.
+* System is scaled to support video connection. 
+* Participants of a video conference meeting can be automatically notified of a meeting, along with a link. 
