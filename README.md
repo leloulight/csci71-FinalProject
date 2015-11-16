@@ -20,6 +20,22 @@ TaskrMastr
 ##### **Product Vision :**
 Every task easily managed through one user-friendly application.
 
+
+##### **Definition of Ready :**
+* Is immediately actionable by the team
+* Has been talked through by the team and the product owner (Before sprint planning)
+* Business requirements for the user stories going into increment are fully understood
+* Every item has value
+* Every item is testable
+* User stories are divided into tasks and estimated by the development team
+* Is properly sized for the team
+* User stories are defined and written
+* Acceptance criteria for increment user stories are defined
+* Dependencies are identified
+* The stakeholders for user stories are identified
+* The team agrees on user stories going into increment and understands how to demo them
+
+
 ##### **Definition of Done :**
 * Product owner signs off
 * No code smells
@@ -31,18 +47,6 @@ Every task easily managed through one user-friendly application.
 * Product passes integration and acceptance testing
 
  
-##### **Definition of Ready :**
-* User stories are defined and written
-* Business requirements for the user stories going into increment are fully understood
-* Acceptance criteria for increment user stories are defined
-* Dependencies are identified
-* User stories are divided into tasks and estimated by the development team
-* The stakeholders for user stories are identified
-* The team understands user stories and how to demo them
-* The team agrees on user stories going into increment and feels comfortable with them 
-* The team has a rough understanding of the architecture and implementation method for each item
-
-
 ##### **Stakeholders :**
 * Nancy is a homekeeper with three children who runs a small Kids' Crafts home business. 
 * Don is a Harvard student majoring in Web Design and juggles work and school. 
