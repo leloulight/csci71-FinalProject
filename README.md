@@ -37,14 +37,17 @@ Every task easily managed through one user-friendly application.
 
 
 ##### **Definition of Done :**
-* Product owner signs off
+* Successful integration into the build
 * No code smells
+* User experience tested
 * Every iteration is ready for production
 * Product requirements are fully implemented
 * Meets technical requirements
 * Meets acceptance criteria
+* Product passes integration, performance, and acceptance testing
 * Code coverage is above 90% 
-* Product passes integration and acceptance testing
+* Nothing more needs to be completed for an increment to be taken into production
+* Product owner signs off
 
  
 ##### **Stakeholders :**
@@ -65,9 +68,9 @@ An organized priority list is available in the **Final-PBI_Ordered_List.xlsx** h
 **Sprinttasktic1_Intro_11_2_2015.pptx.pdf** file (Link: https://github.com/yashspatel23/csci71-FinalProject/blob/d03d5edd075338fa4c79e908a3b762c562eb2d5d/Sprinttasktic1_Intro_11_2_2015.pptx.pdf)
 
 ## **Feedback from Users after Sprint 1:**
-Some don't care about having a calendar or about sharing tasks/making tasks private. However, all say it is essential to be able to push to their mobile devices. This feedback changed our product backlog in that we've reprioritized mobile notifications, bumping that item from Sprint 4 to Sprint 3. 
+Some stakeholders don't care about having a calendar or about sharing tasks/making tasks private. However, all say it is essential to be able to push to their mobile devices. This feedback changed our product backlog in that we've reprioritized mobile notifications, bumping that item from Sprint 4 to Sprint 3. 
 
-Other feedback is that they would like integration with Jira. Slack integration is included as a future backlog item, so we've now also included Jira integration as a user story. Both Slack and Jira will likely fall outside the scope of what we can do in the next 4 weeks, but it is good to know for future reference. 
+Other feedback is that they would like integration with Jira and would like to have the option of video conferencing within the application. Slack integration is included as a future backlog item, so we've now also included Jira integration as a user story. Both Slack and Jira will likely fall outside the scope of what we can do in the next 4 weeks, but it is good to know for future reference. Video conferencing is a great idea, and we've added it to our user stories for future development, but it, too, falls outside the scope of what we can accomplish in the next two sprints. 
 
 *Note that our evening meeting Monday, November 16 after class will be our sprint planning session for the next two weeks. Because setting up everyone's IDEs and PHPUnit testing took so long, we will need to revamp our product backlog for the next two sprint sessions based on what we accomplished in Sprint 1. We will also likely update our product backlog for Sprints 4 and 5 (even though we will not actually get to them) and move at least one item out to future sprints. 
 
