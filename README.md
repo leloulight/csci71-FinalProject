@@ -112,7 +112,7 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 * I am redirected from the login page to the home page. 
 * A cookie is set on the web browser to keep session active.
 
-***Note that setting up IDEs and PHPUnit tests was part of this sprint, so we assigned extra points to these two items. The time took even longer than expected, but we should be good now.)***
+**Note that setting up IDEs and PHPUnit tests was part of this sprint, so we assigned extra points to these two items. The time took even longer than expected, but we should be good now.)**
 ---
 ---
 
@@ -220,7 +220,7 @@ As Sarah the Big Splash event organizer, I want to be able to send text reminder
 ---
 ---
 ### **SPRINT 4 :**
-#### *(Total Points : 28)*
+#### *(Total Points : 25)*
 ---
 ##### **Story Title: Create burndown chart visualizations / analytics**
 **Estimate :** 10  
@@ -241,16 +241,6 @@ As Mike the Tech Inc. employer, I want to be able to find tasks with particular 
 * System allows me to search for any value and returns accurate results. 
 
 ---
-##### **Story Title: Assign list items to users**
-**Estimate :** 3  
-As Sarah the Big Splash event organizer, I want to be able to assign list items to myself and my team members so that every person with appropriate permissions can work on those items.
-
-**Acceptance Criteria :**
-* System allows me to grant permissions to specific users to work on list items. 
-* System allows me to select other users and assign my own list items to them. 
-* Other users see a view of tasks I’ve assigned to them. 
-
----
 ##### **Story Title: Create individual calendar visual**
 **Estimate :** 10  
 As Nancy the homekeeper, I want to be able to see a visual calendar of all list items and tasks that I’ve created so that I can see the entire scope and timeline of my goals.
@@ -262,7 +252,7 @@ As Nancy the homekeeper, I want to be able to see a visual calendar of all list 
 ---
 ---
 ### **SPRINT 5 :**
-#### *(Total Points : 23)*
+#### *(Total Points : 26)*
 ---
 ##### **Story Title: Export to Excel**
 **Estimate :** 10  
@@ -279,6 +269,16 @@ As Mike the Tech Inc. employer, I want to be able to share entire categories wit
 **Acceptance Criteria :**
 * I can select specific users and share categories (and their respective list items) with those users.
 * Selected users can view and edit those categories and items. 
+
+---
+##### **Story Title: Assign list items to other users**
+**Estimate :** 3  
+As Sarah the Big Splash event organizer, I want to be able to assign list items to myself and my team members so that every person with appropriate permissions can work on those items.
+
+**Acceptance Criteria :**
+* System allows me to grant permissions to specific users to work on list items. 
+* System allows me to select other users and assign my own list items to them. 
+* Other users see a view of tasks I’ve assigned to them. 
 
 ---
 ##### **Story Title: Create team calendar visual**
