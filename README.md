@@ -90,10 +90,10 @@ Other feedback is that they would like integration with Jira and would like to h
 ## **Product Backlog**
 
 ### **SPRINT 1 :**
-#### *(Total points: 20)*
+#### *(Total points: 15)*
 ---
 ##### **Story Title: Support registration**
-**Estimate :** 3  
+**Estimate :** 10  
 As Nancy the homekeeper, I want to be able to register with TaskrMastr so that I can log in with my stored login information and use the application.
 
 **Acceptance Criteria :**
@@ -104,7 +104,7 @@ As Nancy the homekeeper, I want to be able to register with TaskrMastr so that I
 
 ---
 ##### **Story Title: Support login**
- **Estimate :** 1  
+ **Estimate :** 5  
 As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so that I can use the system.
 
 **Acceptance Criteria :**
@@ -112,13 +112,12 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 * I am redirected from the login page to the home page. 
 * A cookie is set on the web browser to keep session active.
 
-
+***Note that setting up IDEs and PHPUnit tests was part of this sprint, so we assigned extra points to these two items. The time took even longer than expected, but we should be good now.)***
 ---
 ---
 
 ### **SPRINT 2 :**
-#### *(Total Points : 22)*
----
+#### *(Total Points : 26)*
 ---
 ##### **Story Title: Support account recovery**
 **Estimate :** 3  
@@ -166,7 +165,7 @@ As Nancy the homekeeper, I want to create new list items along with metadata abo
 ---
 ---
 ### **SPRINT 3 :**
-#### *(Total Points : 20)*
+#### *(Total Points : 22)*
 ---
 ##### **Story Title: Mark items as done**
 **Estimate :** 1  
@@ -261,6 +260,10 @@ As Nancy the homekeeper, I want to be able to see a visual calendar of all list 
 * Days should include task name. 
 
 ---
+---
+### **SPRINT 5 :**
+#### *(Total Points : 23)*
+---
 ##### **Story Title: Export to Excel**
 **Estimate :** 10  
 As Don the Harvard student, I want to be able to export lists and reports to Microsoft Excel from the user interface so that I can work with the information using Microsoft Office tools.
@@ -269,11 +272,6 @@ As Don the Harvard student, I want to be able to export lists and reports to Mic
 * System properly formats lists and reports in both table and text form. 
 * System converts lists and reports from one format to the other without corrupting the document. 
 
----
----
-### **SPRINT 5 :**
-#### *(Total Points : 23)*
----
 ##### **Story Title: Share categories with other users**
  **Estimate :** 3  
 As Mike the Tech Inc. employer, I want to be able to share entire categories with other users, including all list items associated with those categories, so that other users will be able to see these categories. 
@@ -292,6 +290,10 @@ As Sarah the Big Splash event organizer, I want to be able to see a calendar vis
 * Days should include task name and person to whom the task is assigned. 
 
 ---
+---
+### **ADDITIONAL BACKLOG ITEMS FOR FUTURE SPRINTS:**
+#### *(Total Points : 180)*
+---
 ##### **Story Title: Create option to make a task private**
 **Estimate :** 10  
 As Mike the Tech Inc. employer, I want to be able to mark a task as private (for myself or for a selected group of users or team) so that I can share the task or list item with only a select team or individual(s).
@@ -299,10 +301,6 @@ As Mike the Tech Inc. employer, I want to be able to mark a task as private (for
 **Acceptance Criteria :**
 * Tasks marked as private are not viewable by anyone except the specified users. 
 
----
----
-### **ADDITIONAL BACKLOG ITEMS FOR FUTURE SPRINTS:**
-#### *(Total Points : 100)*
 ---
 ##### **Story Title: Assign various levels of access control (admin, manager, etc.)**
 **Estimate :** 20  
