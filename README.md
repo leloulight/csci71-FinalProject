@@ -293,7 +293,7 @@ As Sarah the Big Splash event organizer, I want to be able to see a calendar vis
 ---
 ---
 ### **ADDITIONAL BACKLOG ITEMS FOR FUTURE SPRINTS:**
-#### *(Total Points : 180)*
+#### *(Total Points : 170)*
 ---
 ##### **Story Title: Create option to make a task private**
 **Estimate :** 10  
