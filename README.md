@@ -262,6 +262,7 @@ As Don the Harvard student, I want to be able to export lists and reports to Mic
 * System properly formats lists and reports in both table and text form. 
 * System converts lists and reports from one format to the other without corrupting the document. 
 
+---
 ##### **Story Title: Share categories with other users**
  **Estimate :** 3  
 As Mike the Tech Inc. employer, I want to be able to share entire categories with other users, including all list items associated with those categories, so that other users will be able to see these categories. 
