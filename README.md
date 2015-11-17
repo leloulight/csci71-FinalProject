@@ -112,7 +112,7 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 * I am redirected from the login page to the home page. 
 * A cookie is set on the web browser to keep session active.
 
-#### **Note that setting up IDEs and PHPUnit tests was part of this sprint, so we assigned extra points to these two items. The time took even longer than expected, but we should be good now.)**
+#### **Note that setting up IDEs and PHPUnit tests was part of this sprint, so we assigned extra points to these two items. Coordinating dependencies and setting up took even longer than expected, but we should be good now.)**
 ---
 ---
 
