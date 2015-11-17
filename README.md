@@ -112,6 +112,13 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 * I am redirected from the login page to the home page. 
 * A cookie is set on the web browser to keep session active.
 
+
+---
+---
+
+### **SPRINT 2 :**
+#### *(Total Points : 22)*
+---
 ---
 ##### **Story Title: Support account recovery**
 **Estimate :** 3  
@@ -146,11 +153,6 @@ As Don the Harvard student, I want to set up a complete user profile so that I c
 * Allow user information to be added/updated. Information includes name, email, phone number, photo, password.
 
 ---
----
-
-### **SPRINT 2 :**
-#### *(Total Points : 22)*
----
 ##### **Story Title: Create list items**
 **Estimate :** 10  
 As Nancy the homekeeper, I want to create new list items along with metadata about those items including date, comments, priority, status, unique identifier, owner, title, % complete, watch list, owner phone number, and email so that I can store and later refer to those items.
@@ -161,6 +163,10 @@ As Nancy the homekeeper, I want to create new list items along with metadata abo
 * The system stores the list items I select and create.  
 * The system allows me to delete list items.
 
+---
+---
+### **SPRINT 3 :**
+#### *(Total Points : 20)*
 ---
 ##### **Story Title: Mark items as done**
 **Estimate :** 1  
@@ -193,20 +199,6 @@ As Sarah the Big Splash event organizer, I want to be able to sort items in the 
 The system can compute the numerical value of each task in relation to that of the overall sprint as a percentage of the total effort required. 
 
 ---
----
-### **SPRINT 3 :**
-#### *(Total Points : 20)*
----
-##### **Story Title: Create burndown chart visualizations / analytics**
-**Estimate :** 10  
-As Don the Harvard student, I want to be able to create visualizations that show list and task status for selected categories and list items assigned to me or my team members so that I know which specific list items are complete as well as what percentage of list items are complete/incomplete.
-
-**Acceptance Criteria :**
-* Any required graph tools are imported to the system. 
-* A visual is dynamically generated based on my supplied information to the application to present information about tasks completed v.s. in progress v.s. open.
-* A help menu explaining what information the visuals represent.
-
----
 ##### **Story Title: Create email reminders for each item**
 **Estimate :**  5  
 As Sarah the Big Splash event organizer, I want to be able to send email reminders to myself and/or other members of my team whenever a list item is created or is near a due or suspense date so that I can be aware of items and deadlines when I am not logged in to the system.
@@ -230,6 +222,16 @@ As Sarah the Big Splash event organizer, I want to be able to send text reminder
 ---
 ### **SPRINT 4 :**
 #### *(Total Points : 28)*
+---
+##### **Story Title: Create burndown chart visualizations / analytics**
+**Estimate :** 10  
+As Don the Harvard student, I want to be able to create visualizations that show list and task status for selected categories and list items assigned to me or my team members so that I know which specific list items are complete as well as what percentage of list items are complete/incomplete.
+
+**Acceptance Criteria :**
+* Any required graph tools are imported to the system. 
+* A visual is dynamically generated based on my supplied information to the application to present information about tasks completed v.s. in progress v.s. open.
+* A help menu explaining what information the visuals represent.
+
 ---
 ##### **Story Title: Create search tool for use on all metadata items**
 **Estimate :** 5  
