@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master_main')
 
 @section('title', 'Welcome')
 
@@ -16,9 +16,9 @@
                 <img src="images/task.png" class="welcome_info_icons"/>
                 <p class="welcome_info">Create and monitor your tasks</p>
             </div>
-            <div class="col-md-4">
-                <img src="images/share.png" class="welcome_info_icons"/>
-                <p class="welcome_info">Share tasks with others</p>
+            <div class="col-md-4 ">
+                <img src="images/geolocation.png" class="welcome_info_icons"/>
+                <p class="welcome_info">Receive location based alerts</p>
             </div>
             <div class="col-md-4">
                 <img src="images/email.png" class="welcome_info_icons"/>
@@ -28,17 +28,18 @@
         <br />
         <br />
         <div class="row app_info">
-            <div class="col-md-4 ">
-                <img src="images/task.png" class="welcome_info_icons"/>
-                <p class="welcome_info">Create and monitor your tasks</p>
+
+            <div class="col-md-4">
+                <img src="images/categories.png" class="welcome_info_icons"/>
+                <p class="welcome_info">Organize tasks in categories</p>
             </div>
             <div class="col-md-4">
                 <img src="images/share.png" class="welcome_info_icons"/>
-                <p class="welcome_info">Share tasks with others</p>
+                <p class="welcome_info">Share categories and tasks with others</p>
             </div>
             <div class="col-md-4">
-                <img src="images/email.png" class="welcome_info_icons"/>
-                <p class="welcome_info">Receive email and phone notifications</p>
+                <img src="images/analytics.png" class="welcome_info_icons"/>
+                <p class="welcome_info">Monitor analytics over time</p>
             </div>
         </div>
     </div>

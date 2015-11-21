@@ -1,0 +1,13 @@
+@extends('layouts.master')
+
+@include('layouts.home-nav')
+
+@include('layouts.sidebar')
+
+@section('content')
+    <h2>Create Task for Category "{{ $category->name }}"</h2>
+
+    {!! Form::model(new App\Task, ['route' => ['home.tasks.store', $category->slug], 'class'=>'']) !!}
+    @include('tasks/partials/_form', ['submit_text' => 'Create Task'])
+    {!! Form::close() !!}
+@endsection

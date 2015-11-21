@@ -58,7 +58,7 @@ class RoutesTest extends TestCase
      */
     public function testNotLoggedInUser() {
         $this->visit('/home')
-            ->seePageIs('/');
+            ->seePageIs('/auth/login');
     }
 
     /**

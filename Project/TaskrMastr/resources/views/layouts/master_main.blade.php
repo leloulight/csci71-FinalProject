@@ -18,27 +18,7 @@
 <div class="wrapper">
     @yield('navigation')
 
-    @if (Session::has('message'))
-        <div class="alert alert-info">
-            <p>{{ Session::get('message') }}</p>
-        </div>
-    @endif
-
-
-    @if ($errors->any())
-        <div class='alert alert-danger'>
-            @foreach ( $errors->all() as $error )
-                <p>{{ $error }}</p>
-            @endforeach
-        </div>
-    @endif
-
-    <div class="main_wrapper">
-        @yield('sidebar')
-        <div class="main">
-            @yield('content')
-        </div>
-    </div>
+    @yield('content')
 
     @include('layouts.footer')
 </div>
