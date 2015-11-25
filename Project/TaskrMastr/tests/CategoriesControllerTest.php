@@ -99,6 +99,15 @@ class CategoriesControllerTest extends TestCase
         //$this->click('edit_category_test')
             //->see('Category deleted.');
 
+        /*$this->withoutMiddleware();
+        $response = $this->call('DELETE', '/home/category/34');
+        $this->assertEquals(302, $response->getStatusCode());
+        $this->notSeeInDatabase('category', ['deleted_at' => null, 'id' => 34]);*/
+
+        //$this->action('POST', 'CategoriesController@destroy', ['category' => ['name' => 'Category test 2', 'slug' => 'category_test']]);
+        //$this->action('DELETE', 'CategoriesController@destroy', array('name' => 'Category test 2', 'slug' => 'category_test'));
+
+
     }
 
     public function tearDown()
