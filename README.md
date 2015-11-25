@@ -117,7 +117,7 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 ---
 
 ### **SPRINT 2 :**
-#### *(Total Points : 26)*
+#### *(Total Points : 28)*
 ---
 ##### **Story Title: Support account recovery**
 **Estimate :** 3  
@@ -139,6 +139,25 @@ As Don the Harvard student, I want to be able to recover my password so that I c
 * The system stores the categories I select and create. 
 * The system allows me to add list items into my created categories. 
 * The system allows me to delete categories I created and all tasks within that category.
+
+---
+##### **Story Title: Mark items as done**
+**Estimate :** 1  
+As Don the Harvard student, I want to be able to mark list items as done when applicable so that the completed list items can be removed from to-do and similar lists and inserted into a tasks done page. 
+
+**Acceptance Criteria :** 
+* Applicable reports and screens show that the list item is done.
+* When marked as done, the list item is removed from to-do and similar lists. 
+* When marked as done, the list item is moved to a tasks done page. 
+
+---
+##### **Story Title: Automatically increment task number when a new task is created**
+**Estimate :**  1  
+As Mike the Tech Inc. employer, I want the system to automatically generate a new unique task number whenever a new task is created so that new tasks are automatically assigned the next available number and can be identified without any redundancies.
+
+**Acceptance Criteria :**
+* Every task should be referenced using a unique identifier.
+* As a user, I should be able to search for tasks based on this identifier.
 
 ---
 ##### **Story Title: Set user profile/preferences**
@@ -165,26 +184,7 @@ As Nancy the homekeeper, I want to create new list items along with metadata abo
 ---
 ---
 ### **SPRINT 3 :**
-#### *(Total Points : 22)*
----
-##### **Story Title: Mark items as done**
-**Estimate :** 1  
-As Don the Harvard student, I want to be able to mark list items as done when applicable so that the completed list items can be removed from to-do and similar lists and inserted into a tasks done page. 
-
-**Acceptance Criteria :** 
-* Applicable reports and screens show that the list item is done.
-* When marked as done, the list item is removed from to-do and similar lists. 
-* When marked as done, the list item is moved to a tasks done page. 
-
----
-##### **Story Title: Automatically increment task number when a new task is created**
-**Estimate :**  1  
-As Mike the Tech Inc. employer, I want the system to automatically generate a new unique task number whenever a new task is created so that new tasks are automatically assigned the next available number and can be identified without any redundancies.
-
-**Acceptance Criteria :**
-* Every task should be referenced using a unique identifier.
-* As a user, I should be able to search for tasks based on this identifier.
-
+#### *(Total Points : 20)*
 ---
 ##### **Story Title: Sort list items (set item preferences)**
 **Estimate:** 10  
