@@ -10,8 +10,9 @@ use Input;
 use Redirect;
 
 class TasksController extends Controller {
-
-
+    /**
+     * @codeCoverageIgnore
+     */
     public function index(Category $category)
     {
         return view('tasks.index', [
