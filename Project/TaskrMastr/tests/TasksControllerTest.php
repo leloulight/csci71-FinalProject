@@ -28,7 +28,14 @@ class TasksControllerTest extends TestCase
      * Test create a new task
      */
     public function testCreateTask() {
-        $this->visit('/home/category_test/tasks/create')
+        //Create Category first. Notice it didn't work with the setup() & teardown() method since it execute before and after each test.
+        $this->visit('/home')
+            ->click('Create Category [+]')
+            ->type('Category test', 'name')
+            ->type('category_test', 'slug')
+            ->press('Create Category')
+
+            ->visit('/home/category_test/tasks/create')
             ->see('Create Task for Category')
             ->type('Test task', 'name')
             ->type('Task test', 'slug')
@@ -116,8 +123,13 @@ class TasksControllerTest extends TestCase
             ->see('Test task')
             ->press('Delete')
             ->seePageIs('/home/category_test')
-            ->see('Task deleted.');
+            ->see('Task deleted.')
+
+            //Delete Category after deleting the task. Notice it didn't work with the setup() & teardown() method since it execute before and after each test.
+            ->withoutMiddleware()
+            ->call('DELETE', '/home/category_test');
     }
+
     public function tearDown()
     {
         $this->visit('/home')
