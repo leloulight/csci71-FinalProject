@@ -155,7 +155,8 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 * The system presents a (pre-created) list of typical categories from which I can make a selection and also allows me to enter my own categories. 
 * The system stores the categories I select and create. 
 * The system allows me to add list items into my created categories. 
-* The system allows me to delete categories I created and all tasks within that category.
+* The system allows me to edit the categories I created.
+* The system allows me to delete the categories I created and all tasks within that category.
 
 ---
 ##### **Story Title: Mark items as done**
@@ -182,11 +183,12 @@ As Mike the Tech Inc. employer, I want the system to automatically generate a ne
 As Nancy the homekeeper, I want to create new list items along with metadata about those items including date, comments, priority, status, unique identifier, owner, title, % complete, watch list, owner phone number, and email so that I can store and later refer to those items.
 
 **Acceptance Criteria :**
-* The system includes a “Create List” link that leads to list item options. 
-* The system presents a (pre-created) list of typical items from which I can make a selection and also allows me to enter my own list items. 
+* The system includes a “Create Task” link. 
+* The system requires a slug (for identification) and throws an exception if I do not enter one.
 * The system stores the list items I select and create.  
+* The system allows me to edit list items.
 * The system allows me to delete list items.
-* The system throws an exception if I do not enter a slug for a list item (task)
+* The system allows me to mark list items (tasks) as completed.
 
 ---
 ---
