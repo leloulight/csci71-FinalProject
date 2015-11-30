@@ -101,6 +101,14 @@ Other feedback is that they would like integration with Jira and would like to h
 
 *Note that our evening meeting Monday, November 16 after class will be our sprint planning session for the next two weeks. Because setting up everyone's IDEs and PHPUnit testing took so long, we will need to revamp our product backlog for the next two sprint sessions based on what we accomplished in Sprint 1. We will also likely update our product backlog for Sprints 4 and 5 (even though we will not actually get to them) and move at least one item out to future sprints. 
 
+## **Feedback from Users after Sprint 2:**
+-- CEO Brian K. added that the one core functionality he doesn't see as "essential" (among those that we included in our first three sprints) is the analytics tools. 
+-- CEO Jeremy M. does see this functionality as essential, and it might be a selling point for him because as far as he knows, he does not have an application that includes it. However, he added that he "pays other people to do this stuff for him," so we would need to meet with his software developers. 
+-- Homekeeper Karen H. said that she doesn't see a need for extensive profile options; her primary interest would be an application that enables her to create categories, create tasks within those categories, and edit and delete those categories. In addition, she wants to receive notification via both email and text. 
+-- The other stakeholders said their feedback remains as it was after the first sprint, so these are the only new updates. 
+The ways this new information impacted our PBIs is that we've moved the analytics tools a little farther down the list, and we've affirmed that text notifications indeed needs to remain in Sprint 3 because all stakeholders consider it essential. We also bumped "Set User Profile & Preferences" farther down the list because not all stakeholders consider this a necessary functionality. 
+*Note that either "Set user preferences" or "Sort list items" will be moved to Sprint 4 (hence the discrepancy in points allotted to that sprint versus actual points in user stories). We are meeting after class on Nov. 30 for our Sprint planning session and will decide as a team how best to proceed. 
+
 ## **Product Backlog**
 
 ### **SPRINT 1 :**
@@ -131,20 +139,10 @@ As Mike the Tech Inc. employer, I want to be able to log in to TaskrMastr so tha
 ---
 
 ### **SPRINT 2 :**
-#### *(Total Points : 28)*
----
-##### **Story Title: Support account recovery**
-**Estimate :** 3  
-As Don the Harvard student, I want to be able to recover my password so that I can gain access to the system if I forget my password.
-
-**Acceptance Criteria :** 
-* The system sends an error message when I try to log in with the wrong password. 
-* With the error message, the system includes a link (forgot password) that I can click on, which leads to a page that allows me to enter my unique email and be emailed a link directing me to a page where I can reset my password. 
-* The system stores my new login information. 
-
+#### *(Total Points : 22)*
 ---
 ##### **Story Title: Create categories**
- **Estimate :** 3  
+ **Estimate :** 10  
  As Sarah the Big Splash event organizer, I want to be able to create categories of list items and associate my list items with their respective categories so that I can view and work with them in aggregate.
 
 **Acceptance Criteria :** 
@@ -174,6 +172,32 @@ As Mike the Tech Inc. employer, I want the system to automatically generate a ne
 * As a user, I should be able to search for tasks based on this identifier.
 
 ---
+##### **Story Title: Create list items (tasks within Categories)**
+**Estimate :** 10  
+As Nancy the homekeeper, I want to create new list items along with metadata about those items including date, comments, priority, status, unique identifier, owner, title, % complete, watch list, owner phone number, and email so that I can store and later refer to those items.
+
+**Acceptance Criteria :**
+* The system includes a “Create List” link that leads to list item options. 
+* The system presents a (pre-created) list of typical items from which I can make a selection and also allows me to enter my own list items. 
+* The system stores the list items I select and create.  
+* The system allows me to delete list items.
+* The system throws an exception if I do not enter a slug for a list item (task)
+
+---
+---
+### **SPRINT 3 :**
+#### *(Total Points : 23)*
+---
+##### **Story Title: Support account recovery**
+**Estimate :** 3  
+As Don the Harvard student, I want to be able to recover my password so that I can gain access to the system if I forget my password.
+
+**Acceptance Criteria :** 
+* The system sends an error message when I try to log in with the wrong password. 
+* With the error message, the system includes a link (forgot password) that I can click on, which leads to a page that allows me to enter my unique email and be emailed a link directing me to a page where I can reset my password. 
+* The system stores my new login information. 
+
+---
 ##### **Story Title: Set user profile/preferences**
 **Estimate :** 10  
 As Don the Harvard student, I want to set up a complete user profile so that I can specify when to send notifications to myself regarding tasks nearing deadlines and what options I want to include in list item preferences. 
@@ -183,22 +207,7 @@ As Don the Harvard student, I want to set up a complete user profile so that I c
 * Set prefered method of contact when receiving alerts about upcoming due dates.
 * Associate email / phone number with tasks assigned to me.
 * Allow user information to be added/updated. Information includes name, email, phone number, photo, password.
-
----
-##### **Story Title: Create list items**
-**Estimate :** 10  
-As Nancy the homekeeper, I want to create new list items along with metadata about those items including date, comments, priority, status, unique identifier, owner, title, % complete, watch list, owner phone number, and email so that I can store and later refer to those items.
-
-**Acceptance Criteria :**
-* The system includes a “Create List” link that leads to list item options. 
-* The system presents a (pre-created) list of typical items from which I can make a selection and also allows me to enter my own list items. 
-* The system stores the list items I select and create.  
-* The system allows me to delete list items.
-
----
----
-### **SPRINT 3 :**
-#### *(Total Points : 20)*
+* 
 ---
 ##### **Story Title: Sort list items (set item preferences)**
 **Estimate:** 10  
