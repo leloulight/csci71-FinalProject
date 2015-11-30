@@ -4,6 +4,10 @@
 URL of working product increment video : https://www.youtube.com/watch?v=3tTyOG_bu-s&feature=youtu.be
 
 Code Coverage :
+Code Coverage : ![alt tag](https://github.com/yashspatel23/csci71-FinalProject/blob/master/Screen%20Shot%20Sprint%202%20-%203)
+![alt tag](https://github.com/yashspatel23/csci71-FinalProject/blob/master/Screen%20Shot%20Sprint%202%20-%204)
+
+
 
 ### November 16 Update
 URL of working product increment video : https://www.youtube.com/watch?v=yA-L5F2J2Wg&feature=youtu.be
