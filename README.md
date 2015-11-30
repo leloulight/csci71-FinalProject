@@ -1,5 +1,10 @@
 # CSCI E-71 Final Project
 
+### November 30 Update
+URL of working product increment video : https://www.youtube.com/watch?v=3tTyOG_bu-s&feature=youtu.be
+
+Code Coverage :
+
 ### November 16 Update
 URL of working product increment video : https://www.youtube.com/watch?v=yA-L5F2J2Wg&feature=youtu.be
 
