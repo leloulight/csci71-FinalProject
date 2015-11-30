@@ -216,18 +216,7 @@ As Don the Harvard student, I want to set up a complete user profile so that I c
 * Allow user information to be added/updated. Information includes name, email, phone number, photo, password.
 * 
 ---
-##### **Story Title: Sort list items (set item preferences)**
-**Estimate:** 10  
-As Sarah the Big Splash event organizer, I want to be able to sort items in the list so that I can see the items ordered according to my preferences.
 
-**Acceptance Criteria :**
-* System generates options for level of effort required (numerical value), priority (sprint #), and target date at item creation. 
-* I can order by priority. 
-* I can order alphabetically.
-* I can order by target date.
-The system can compute the numerical value of each task in relation to that of the overall sprint as a percentage of the total effort required. 
-
----
 ##### **Story Title: Create email reminders for each item**
 **Estimate :**  5  
 As Sarah the Big Splash event organizer, I want to be able to send email reminders to myself and/or other members of my team whenever a list item is created or is near a due or suspense date so that I can be aware of items and deadlines when I am not logged in to the system.
@@ -250,7 +239,19 @@ As Sarah the Big Splash event organizer, I want to be able to send text reminder
 ---
 ---
 ### **SPRINT 4 :**
-#### *(Total Points : 25)*
+#### *(Total Points : 35)*
+---
+##### **Story Title: Sort list items (set item preferences)**
+**Estimate:** 10  
+As Sarah the Big Splash event organizer, I want to be able to sort items in the list so that I can see the items ordered according to my preferences.
+
+**Acceptance Criteria :**
+* System generates options for level of effort required (numerical value), priority (sprint #), and target date at item creation. 
+* I can order by priority. 
+* I can order alphabetically.
+* I can order by target date.
+The system can compute the numerical value of each task in relation to that of the overall sprint as a percentage of the total effort required. 
+
 ---
 ##### **Story Title: Create burndown chart visualizations / analytics**
 **Estimate :** 10  
