@@ -193,7 +193,7 @@ As Nancy the homekeeper, I want to create new list items along with metadata abo
 ---
 ---
 ### **SPRINT 3 :**
-#### *(Total Points : 23)*
+#### *(Total Points : 38)*
 ---
 ##### **Story Title: Support account recovery**
 **Estimate :** 3  
@@ -214,7 +214,6 @@ As Don the Harvard student, I want to set up a complete user profile so that I c
 * Set prefered method of contact when receiving alerts about upcoming due dates.
 * Associate email / phone number with tasks assigned to me.
 * Allow user information to be added/updated. Information includes name, email, phone number, photo, password.
-* 
 ---
 
 ##### **Story Title: Create email reminders for each item**
@@ -227,32 +226,6 @@ As Sarah the Big Splash event organizer, I want to be able to send email reminde
 * Email alerts preferences can be updated in the user profile/preferences page.
 
 ---
-##### **Story Title: Create Text reminders for each item**
-**Estimate :** 5  
-As Sarah the Big Splash event organizer, I want to be able to send text reminders to myself and/or other assigned users on my team whenever a list item is assigned or is near a due or suspense date so that I can be aware of items and deadlines via mobile phone.
-
-**Acceptance Criteria :**
-* System generates a “no phone number on file” error if I attempt to set preference to send text messages to a user who has not included a phone number in his/her profile.
-* System automatically generates text messages based on preset list item criteria. 
-* By default, system sends reminder one day before task is due to the person responsible for the task.
-
----
----
-### **SPRINT 4 :**
-#### *(Total Points : 35)*
----
-##### **Story Title: Sort list items (set item preferences)**
-**Estimate:** 10  
-As Sarah the Big Splash event organizer, I want to be able to sort items in the list so that I can see the items ordered according to my preferences.
-
-**Acceptance Criteria :**
-* System generates options for level of effort required (numerical value), priority (sprint #), and target date at item creation. 
-* I can order by priority. 
-* I can order alphabetically.
-* I can order by target date.
-The system can compute the numerical value of each task in relation to that of the overall sprint as a percentage of the total effort required. 
-
----
 ##### **Story Title: Create burndown chart visualizations / analytics**
 **Estimate :** 10  
 As Don the Harvard student, I want to be able to create visualizations that show list and task status for selected categories and list items assigned to me or my team members so that I know which specific list items are complete as well as what percentage of list items are complete/incomplete.
@@ -261,15 +234,6 @@ As Don the Harvard student, I want to be able to create visualizations that show
 * Any required graph tools are imported to the system. 
 * A visual is dynamically generated based on my supplied information to the application to present information about tasks completed v.s. in progress v.s. open.
 * A help menu explaining what information the visuals represent.
-
----
-##### **Story Title: Create search tool for use on all metadata items**
-**Estimate :** 5  
-As Mike the Tech Inc. employer, I want to be able to find tasks with particular values in task metadata fields so that I can quickly view only those tasks in my selected field that I want to see based on my search context.
-
-**Acceptance Criteria :**
-* System allows me to select any metadata field and run a search for specific tasks. 
-* System allows me to search for any value and returns accurate results. 
 
 ---
 ##### **Story Title: Create individual calendar visual**
@@ -282,8 +246,39 @@ As Nancy the homekeeper, I want to be able to see a visual calendar of all list 
 
 ---
 ---
-### **SPRINT 5 :**
-#### *(Total Points : 26)*
+### **SPRINT 4 :**
+#### *(Total Points : 30)*
+---
+##### **Story Title: Create Text reminders for each item**
+**Estimate :** 5  
+As Sarah the Big Splash event organizer, I want to be able to send text reminders to myself and/or other assigned users on my team whenever a list item is assigned or is near a due or suspense date so that I can be aware of items and deadlines via mobile phone.
+
+**Acceptance Criteria :**
+* System generates a “no phone number on file” error if I attempt to set preference to send text messages to a user who has not included a phone number in his/her profile.
+* System automatically generates text messages based on preset list item criteria. 
+* By default, system sends reminder one day before task is due to the person responsible for the task.
+---
+
+##### **Story Title: Sort list items (set item preferences)**
+**Estimate:** 10  
+As Sarah the Big Splash event organizer, I want to be able to sort items in the list so that I can see the items ordered according to my preferences.
+
+**Acceptance Criteria :**
+* System generates options for level of effort required (numerical value), priority (sprint #), and target date at item creation. 
+* I can order by priority. 
+* I can order alphabetically.
+* I can order by target date.
+The system can compute the numerical value of each task in relation to that of the overall sprint as a percentage of the total effort required. 
+
+---
+##### **Story Title: Create search tool for use on all metadata items**
+**Estimate :** 5  
+As Mike the Tech Inc. employer, I want to be able to find tasks with particular values in task metadata fields so that I can quickly view only those tasks in my selected field that I want to see based on my search context.
+
+**Acceptance Criteria :**
+* System allows me to select any metadata field and run a search for specific tasks. 
+* System allows me to search for any value and returns accurate results. 
+
 ---
 ##### **Story Title: Export to Excel**
 **Estimate :** 10  
@@ -293,6 +288,10 @@ As Don the Harvard student, I want to be able to export lists and reports to Mic
 * System properly formats lists and reports in both table and text form. 
 * System converts lists and reports from one format to the other without corrupting the document. 
 
+---
+---
+### **SPRINT 5 :**
+#### *(Total Points : 36)*
 ---
 ##### **Story Title: Share categories with other users**
  **Estimate :** 3  
@@ -314,7 +313,7 @@ As Sarah the Big Splash event organizer, I want to be able to assign list items 
 
 ---
 ##### **Story Title: Create team calendar visual**
-**Estiamte :** 10  
+**Estimate :** 10  
 As Sarah the Big Splash event organizer, I want to be able to see a calendar visual of all list items and tasks assigned to any team I belong to so that I can see the entire scope and timeline of my goals.
 
 **Acceptance Criteria :**
@@ -322,9 +321,29 @@ As Sarah the Big Splash event organizer, I want to be able to see a calendar vis
 * Days should include task name and person to whom the task is assigned. 
 
 ---
+##### **Story Title: Support Slack integration**
+**Estimate :** 10  
+As Mike the Tech Inc. employer, I want to be able to set up my jira account as a communication channel for list and task creation and notifications so that I can work with a project team using one integrated collaboration tool with one interface.
+
+**Acceptance Criteria :**
+* System allows linking of external communication channels.
+* Creation of new elements in TaskrMastr automatically generates updates in Jira. 
+
+---
+##### **Story Title: Remind me when I am at (Geofencing)**
+**Estimate :** 10  
+As Mike the Tech Inc. employer, I want to be able to view list items and reminders in the context of my geo-location so that the items I see are only those appropriate for my location.
+
+**Acceptance Criteria :**
+* System includes “assign geolocation” as a preference option for list items. 
+* System includes “assign geolocation” as a preference option for user profile.
+* System generates appropriate list views and reminders based on my preset preferences. 
+
+
+---
 ---
 ### **ADDITIONAL BACKLOG ITEMS FOR FUTURE SPRINTS:**
-#### *(Total Points : 170)*
+#### *(Total Points : 140)*
 ---
 ##### **Story Title: Create option to make a task private**
 **Estimate :** 10  
@@ -388,25 +407,6 @@ As Mike the Tech Inc. employer, I want to be able to set up my slack account as 
 **Acceptance Criteria :**
 * System allows linking of external communication channels.
 * Creation of new elements in TaskrMastr automatically generates updates in Slack. 
-
----
-##### **Story Title: Support Slack integration**
-**Estimate :** 20  
-As Mike the Tech Inc. employer, I want to be able to set up my jira account as a communication channel for list and task creation and notifications so that I can work with a project team using one integrated collaboration tool with one interface.
-
-**Acceptance Criteria :**
-* System allows linking of external communication channels.
-* Creation of new elements in TaskrMastr automatically generates updates in Jira. 
-
----
-##### **Story Title: Remind me when I am at (Geofencing)**
-**Estimate :** 10  
-As Mike the Tech Inc. employer, I want to be able to view list items and reminders in the context of my geo-location so that the items I see are only those appropriate for my location.
-
-**Acceptance Criteria :**
-* System includes “assign geolocation” as a preference option for list items. 
-* System includes “assign geolocation” as a preference option for user profile.
-* System generates appropriate list views and reminders based on my preset preferences. 
 
 ---
 ##### **Story Title: iOS and Android application support**
