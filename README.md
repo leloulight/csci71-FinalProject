@@ -214,8 +214,8 @@ As Don the Harvard student, I want to set up a complete user profile so that I c
 * Set prefered method of contact when receiving alerts about upcoming due dates.
 * Associate email / phone number with tasks assigned to me.
 * Allow user information to be added/updated. Information includes name, email, phone number, photo, password.
----
 
+---
 ##### **Story Title: Create email reminders for each item**
 **Estimate :**  5  
 As Sarah the Big Splash event organizer, I want to be able to send email reminders to myself and/or other members of my team whenever a list item is created or is near a due or suspense date so that I can be aware of items and deadlines when I am not logged in to the system.
