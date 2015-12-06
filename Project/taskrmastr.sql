@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Dec 06, 2015 at 09:39 AM
+-- Generation Time: Dec 06, 2015 at 12:10 PM
 -- Server version: 5.5.41-log
 -- PHP Version: 5.5.24
 
@@ -32,16 +32,39 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `user_id` int(10) unsigned NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=25 ;
+  `user_id` int(10) unsigned NOT NULL DEFAULT '0'
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`, `slug`, `created_at`, `updated_at`, `user_id`) VALUES
-(14, 'Shopping', 'shopping', '2015-11-21 19:23:21', '2015-11-21 19:23:21', 1),
-(15, 'CS71 Project', 'cs71_project', '2015-11-21 19:27:36', '2015-11-21 19:27:36', 2);
+(1, 'Shopping', 'shopping', '2015-12-06 18:05:48', '2015-12-06 18:05:48', 1),
+(7, 'email', 'email', '2015-12-06 19:59:35', '2015-12-06 19:59:35', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event_models`
+--
+
+CREATE TABLE IF NOT EXISTS `event_models` (
+`id` int(10) unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `start` datetime NOT NULL,
+  `end` datetime NOT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `allDay` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `event_models`
+--
+
+INSERT INTO `event_models` (`id`, `title`, `start`, `end`, `url`, `allDay`) VALUES
+(1, 'project due', '2015-12-14 00:00:00', '2015-12-14 00:00:00', '', 'false'),
+(2, 'testing period', '2015-12-07 00:00:00', '2015-12-13 00:00:00', '', '');
 
 -- --------------------------------------------------------
 
@@ -61,7 +84,8 @@ CREATE TABLE IF NOT EXISTS `migrations` (
 INSERT INTO `migrations` (`migration`, `batch`) VALUES
 ('2014_10_12_000000_create_users_table', 1),
 ('2014_10_12_100000_create_password_resets_table', 1),
-('2015_11_20_103843_create_categories_and_tasks_tables', 2);
+('2015_11_20_103843_create_categories_and_tasks_tables', 1),
+('2015_12_06_100031_create_event_models', 1);
 
 -- --------------------------------------------------------
 
@@ -90,22 +114,17 @@ CREATE TABLE IF NOT EXISTS `tasks` (
   `description` text COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `tasks`
 --
 
 INSERT INTO `tasks` (`id`, `category_id`, `name`, `slug`, `completed`, `description`, `created_at`, `updated_at`) VALUES
-(15, 14, 'Milk', 'milk', 0, 'Buy milk from Costco', '2015-11-21 19:24:35', '2015-11-21 19:24:35'),
-(16, 14, 'Jacket', 'blazer', 0, 'Buy a jacket from Walmart.', '2015-11-21 19:25:09', '2015-11-21 19:25:09'),
-(17, 14, 'Cookies', 'cookies', 0, 'Buy cookies for basketball game.', '2015-11-21 19:25:32', '2015-11-21 19:25:32'),
-(18, 14, 'Envelopes', 'envelopes', 0, 'Buy envelopes for mailing cards.', '2015-11-21 19:25:53', '2015-11-21 19:25:53'),
-(19, 14, 'Headphone', 'headphone', 0, 'Buy a pair of headphones for flight', '2015-11-21 19:26:43', '2015-12-05 14:54:43'),
-(20, 15, 'Sidebar', 'sidebar', 0, 'Complete sidebar implementation.', '2015-11-21 19:28:15', '2015-11-21 19:28:15'),
-(21, 15, 'Analytics', 'analytics', 0, 'Decide on what analytics to present.', '2015-11-21 19:28:50', '2015-11-21 19:28:50'),
-(22, 15, 'Account Recovery', 'recovery', 0, 'Add account recovery.', '2015-11-21 19:29:21', '2015-11-21 19:29:21'),
-(23, 15, 'Metadata', 'metadata', 0, 'Add category/task metadata.', '2015-11-21 19:29:44', '2015-11-21 19:29:44');
+(1, 1, 'headphone', 'headphones', 1, 'headphones from walmart', '2015-12-06 18:06:10', '2015-12-06 18:06:10'),
+(2, 1, 'candy', 'candy', 1, 'candy from costco', '2015-12-06 18:06:24', '2015-12-06 18:06:24'),
+(3, 7, 'new', 'new', 0, 'new', '2015-12-06 20:03:51', '2015-12-06 20:03:51'),
+(4, 7, 'new', 'new', 0, 'new', '2015-12-06 20:04:03', '2015-12-06 20:04:03');
 
 -- --------------------------------------------------------
 
@@ -122,14 +141,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `recovery` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`, `recovery`) VALUES
-(1, 'yashspatel23', 'yash.spatel23@gmail.com', '$2y$10$FqBfg4anHUm67hGVT1h1HOAv30Q.BmKZRE/tKf1KNQBR68GtkjLRu', 'gfajynOH0FCXx0VDWvfPKN1aFOTYgCaLKcmQ3xXPSoLI4K4iHeiNba4yECwS', '2015-12-06 15:00:04', '2015-12-06 15:57:25', 'Oviedo St');
+(1, 'yashspatel23', 'yash.spatel23@gmail.com', '$2y$10$PevOQGx0VvqpZ0wz8Z4mh.5oQZPdp8VNisBZOeaTD5oypBmCqH.76', 'uMhYDKDs3cDddnbj3EwsVeyKol8eMnGjjfNZ8GKzEzIz2y6tyvWjjFmJSZ6y', '2015-12-06 18:05:30', '2015-12-06 18:13:44', 'Oviedo St'),
+(2, 'test', 'test@gmail.com', '$2y$10$ye9dmnFrxNP2CfboYCCjfO9folJlUwF2lJSvGzUrEc6IkS8a8lh3a', 'nSWidro9yLIzzIP7Szrs5CNsTAr0KikIOgR3JO8YRsjIQlR1KP1EtjEO6ge3', '2015-12-06 18:14:08', '2015-12-06 18:33:18', 'Cambridge St');
 
 --
 -- Indexes for dumped tables
@@ -139,6 +159,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `event_models`
+--
+ALTER TABLE `event_models`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -167,17 +193,22 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `event_models`
+--
+ALTER TABLE `event_models`
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
