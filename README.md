@@ -257,8 +257,8 @@ As Sarah the Big Splash event organizer, I want to be able to send text reminder
 * System generates a “no phone number on file” error if I attempt to set preference to send text messages to a user who has not included a phone number in his/her profile.
 * System automatically generates text messages based on preset list item criteria. 
 * By default, system sends reminder one day before task is due to the person responsible for the task.
----
 
+---
 ##### **Story Title: Sort list items (set item preferences)**
 **Estimate:** 10  
 As Sarah the Big Splash event organizer, I want to be able to sort items in the list so that I can see the items ordered according to my preferences.
