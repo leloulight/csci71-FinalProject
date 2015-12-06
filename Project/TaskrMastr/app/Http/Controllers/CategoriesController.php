@@ -9,13 +9,17 @@ use App\Category;
 use Illuminate\Support\Facades\Auth;
 use Input;
 use Redirect;
+use DB;
+use Mail;
 
 class CategoriesController extends Controller
 {
 
     public function index()
     {
-        $categories = Category::all();
+        //$categories = Category::all();
+        $categories = Category::where('user_id', Auth::user()->id)->get();
+
         return view('categories.index', [
             'categories' => $categories,
             'name' => Auth::user()->name
@@ -43,9 +47,26 @@ class CategoriesController extends Controller
         $this->validate($request, $this->rules);
 
         $input = Input::all();
+        $input['user_id'] = Auth::user()->id;
+        //print_r($input);
         Category::create( $input );
 
-        return Redirect::route('home.index')->with('message', 'Category created');
+
+        $data = array(
+            'name' => Auth::user()->name,
+        );
+
+        Mail::send('emails.category', $data, function ($message) {
+
+            $message->from('taskrmastr@outlook.com', 'Category Created');
+
+            $message->to(Auth::user()->email)->subject('Category Created');
+
+        });
+
+
+
+        return Redirect::route('categories.index')->with('message', 'Category created');
     }
 
 
@@ -74,7 +95,7 @@ class CategoriesController extends Controller
         $input = array_except(Input::all(), '_method');
         $category->update($input);
 
-        return Redirect::route('home.show', $category->slug)->with('message', 'Project updated.');
+        return Redirect::route('categories.show', $category->slug)->with('message', 'Project updated.');
     }
 
 
@@ -82,6 +103,6 @@ class CategoriesController extends Controller
     {
         $category->delete();
 
-        return Redirect::route('home.index')->with('message', 'Category deleted.');
+        return Redirect::route('categories.index')->with('message', 'Category deleted.');
     }
 }

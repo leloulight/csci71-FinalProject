@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="tile" style="background-color: #888">
-                        <h3>{!! link_to_route('home.tasks.create', 'Create Task [+]', $category->slug) !!}</h3>
+                        <h3>{!! link_to_route('categories.tasks.create', 'Create Task [+]', $category->slug) !!}</h3>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="tile" style="background-color: #888">
-                        <h3>{!! link_to_route('home.tasks.create', 'Create Task [+]', $category->slug) !!}</h3>
+                        <h3>{!! link_to_route('categories.tasks.create', 'Create Task [+]', $category->slug) !!}</h3>
                     </div>
                 </div>
 
@@ -59,15 +59,15 @@
                     <div class="col-sm-3">
                         <div class="tile" style="background-color: {{ $color  }}">
                             <br/>
-                            {!! Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('home.tasks.destroy', $category->slug, $task->slug))) !!}
-                            <h3><a href="{{ route('home.tasks.show', [$category->slug, $task->slug]) }}">{{ $task->name }}</a></h3>
+                            {!! Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('categories.tasks.destroy', $category->slug, $task->slug))) !!}
+                            <h3><a href="{{ route('categories.tasks.show', [$category->slug, $task->slug]) }}">{{ $task->name }}</a></h3>
 
                             <div class="action_buttons">
-                                {!! link_to_route('home.tasks.edit', 'Edit', array($category->slug, $task->slug), array('class' => 'btn btn-info')) !!}
+                                {!! link_to_route('categories.tasks.edit', 'Edit', array($category->slug, $task->slug), array('class' => 'btn btn-info')) !!}
                                 {!! Form::submit('Delete', array('class' => 'btn btn-danger')) !!}
                             </div>
                             {!! Form::close() !!}
-                            <a href="{{ route('home.show', $category->slug) }}"><p>{{ $task->description }}</p></a>
+                            <a href="{{ route('categories.show', $category->slug) }}"><p>{{ $task->description }}</p></a>
                         </div>
                     </div>
                 @endforeach
@@ -76,7 +76,7 @@
     @endif
 
     <p>
-        {!! link_to_route('home.index', 'Back to Categories') !!}
+        {!! link_to_route('categories.index', 'Back to Categories') !!}
 
 
     </p>

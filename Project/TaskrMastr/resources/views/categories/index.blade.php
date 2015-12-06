@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="tile" style="background-color: #888">
-                        <h3>{!! link_to_route('home.create', 'Create Category [+]') !!}</h3>
+                        <h3>{!! link_to_route('categories.create', 'Create Category [+]') !!}</h3>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="tile" style="background-color: #888">
-                        <h3>{!! link_to_route('home.create', 'Create Category [+]') !!}</h3>
+                        <h3>{!! link_to_route('categories.create', 'Create Category [+]') !!}</h3>
                     </div>
                 </div>
 
@@ -57,15 +57,15 @@
                     <div class="col-sm-3">
                         <div class="tile" style="background-color: {{ $color  }}">
                             <br/>
-                            {!! Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('home.destroy', $category->slug))) !!}
-                            <h3><a href="{{ route('home.show', $category->slug) }}">{{ $category->name }}</a></h3>
+                            {!! Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('categories.destroy', $category->slug))) !!}
+                            <h3><a href="{{ route('categories.show', $category->slug) }}">{{ $category->name }}</a></h3>
 
                             <div class="action_buttons">
-                                {!! link_to_route('home.edit', 'Edit', array($category->slug), array('class' => 'btn btn-info')) !!}
+                                {!! link_to_route('categories.edit', 'Edit', array($category->slug), array('class' => 'btn btn-info')) !!}
                                 {!! Form::submit('Delete', array('class' => 'btn btn-danger')) !!}
                             </div>
                             {!! Form::close() !!}
-                            <a href="{{ route('home.show', $category->slug) }}"><p>Category Description</p></a>
+                            <a href="{{ route('categories.show', $category->slug) }}"><p>Category Description</p></a>
                         </div>
                     </div>
                 @endforeach

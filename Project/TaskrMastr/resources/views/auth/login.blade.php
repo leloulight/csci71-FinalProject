@@ -7,7 +7,12 @@
 @section('content')
     <div class="login_container">
         <div class="container">
-            <h4>TaskrMastr Login</h4>
+            <h4>Login</h4>
+            @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
 
             @if (count($errors) > 0)
                 <div class="alert alert-danger">
@@ -26,6 +31,7 @@
                     <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
                     <input type="password" class="form-control" name="password" placeholder="Password">
                     <input type="checkbox" name="remember" checked hidden>
+                    <p><a href="/auth/recover">Forgot password?</a></p>
                     <input type="submit" class="btn btn-success" value="Login">
                 </form>
             </div>

@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
+
 
 class Category extends Model
 {
@@ -12,4 +14,5 @@ class Category extends Model
     {
         return $this->hasMany('App\Task');
     }
+
 }

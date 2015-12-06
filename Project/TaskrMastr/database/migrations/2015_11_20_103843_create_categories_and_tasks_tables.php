@@ -18,6 +18,7 @@ class CreateCategoriesAndTasksTables extends Migration
             $table->string('name')->default('');
             $table->string('slug')->default('');
             $table->timestamps();
+            $table->integer('user_id')->unsigned()->default(0);
         });
 
         Schema::create('tasks', function(Blueprint $table) {

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Input;
 use Redirect;
+use Mail;
 
 class TasksController extends Controller {
     /**
@@ -46,7 +47,21 @@ class TasksController extends Controller {
         $input['category_id'] = $category->id;
         Task::create( $input );
 
-        return Redirect::route('home.show', $category->slug)->with('message', 'Task created.');
+        $data = array(
+            'name' => Auth::user()->name,
+        );
+
+        Mail::send('emails.task', $data, function ($message) {
+
+            $message->from('taskrmastr@outlook.com', 'Task Created');
+
+            $message->to(Auth::user()->email)->subject('Task Created');
+
+        });
+
+
+
+        return Redirect::route('categories.show', $category->slug)->with('message', 'Task created.');
     }
 
 
@@ -77,7 +92,7 @@ class TasksController extends Controller {
         $input = array_except(Input::all(), '_method');
         $task->update($input);
 
-        return Redirect::route('home.tasks.show', [$category->slug, $task->slug])->with('message', 'Task updated.');
+        return Redirect::route('categories.tasks.show', [$category->slug, $task->slug])->with('message', 'Task updated.');
     }
 
 
@@ -85,7 +100,7 @@ class TasksController extends Controller {
     {
         $task->delete();
 
-        return Redirect::route('home.show', $category->slug)->with('message', 'Task deleted.');
+        return Redirect::route('categories.show', $category->slug)->with('message', 'Task deleted.');
     }
 
 }

@@ -29,6 +29,7 @@
                     <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
                     <input type="password" class="form-control" name="password" placeholder="Password">
                     <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password">
+                    <input type="text" class="form-control" name="recovery" value="{{ old('recovery') }}" placeholder="Security Question: What street did you grow up on?">
                     <input type="submit" class="btn btn-success" value="Sign Up">
                 </form>
             </div>

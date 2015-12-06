@@ -22,6 +22,7 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    protected $redirectPath = '/dashboard';
 
     /**
      * Create a new authentication controller instance.
@@ -45,6 +46,7 @@ class AuthController extends Controller
             'name' => 'required|max:255|unique:users',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
+            'recovery' => 'required|max:255',
         ]);
     }
 
@@ -60,6 +62,7 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'recovery' => $data['recovery'],
         ]);
     }
 }

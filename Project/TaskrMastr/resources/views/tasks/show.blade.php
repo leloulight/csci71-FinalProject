@@ -6,7 +6,7 @@
 
 @section('content')
     <h2>
-        {!! link_to_route('home.show', $category->name, [$category->slug]) !!} -
+        {!! link_to_route('categories.show', $category->name, [$category->slug]) !!} -
         {{ $task->name }}
     </h2>
 
