@@ -11,8 +11,10 @@ class CategoriesControllerTest extends TestCase
         parent::setUp();
 
         $this->visit('/auth/login')
+            //->type('tomekskiba79@gmail.com', 'email')
             ->type('test@gmail.com', 'email')
             ->type('testing', 'password')
+            //->type('ttttttt', 'password')
             ->press('Login');
     }
 
@@ -24,7 +26,7 @@ class CategoriesControllerTest extends TestCase
      */
     public function testViewInjection()
     {
-        $response = $this->call('GET', 'home');
+        $response = $this->call('GET', 'categories');
         $this->assertViewHas('categories');
         $categories = $response->original->getData()['categories'];
         $this->assertInstanceOf('Illuminate\Database\Eloquent\Collection', $categories);
@@ -34,7 +36,7 @@ class CategoriesControllerTest extends TestCase
      * Test if creation of new category is successful
      */
     public function testCreateCategory() {
-        $this->visit('/home')
+        $this->visit('/categories')
             ->see('Create Category [+]')
             ->click('Create Category [+]')
             ->type('Category test', 'name')
@@ -47,7 +49,7 @@ class CategoriesControllerTest extends TestCase
      * Test if validation of the create new category form works properly
      */
     public function testCreateCategoryFormValidation() {
-        $this->visit('/home/create')
+        $this->visit('/categories/create')
             ->type('', 'name')
             ->type('', 'slug')
             ->press('Create Category')
@@ -63,13 +65,13 @@ class CategoriesControllerTest extends TestCase
      * Test editing of existing category
      */
     public function testEditCategory() {
-        $this->visit('/home/category_test/edit')
+        $this->visit('/categories/category_test/edit')
         //$this->click('edit_category_test')
             ->see('Edit Category')
             ->type('Category test 2', 'name')
             ->type('category_test', 'slug')
             ->press('Edit Category')
-            ->seePageIs('/home/category_test')
+            ->seePageIs('/categories/category_test')
             ->see('Project updated.')
             ->see('Category test 2');
     }
@@ -78,7 +80,7 @@ class CategoriesControllerTest extends TestCase
      * Test if validation of the edit existing category form works properly.
      */
     public function testEditCategoryFormValidation() {
-        $this->visit('/home/category_test/edit')
+        $this->visit('/categories/category_test/edit')
             ->type('', 'name')
             ->type('', 'slug')
             ->press('Edit Category')
@@ -90,29 +92,20 @@ class CategoriesControllerTest extends TestCase
             ->see('The name must be at least 3 characters.');
     }
 
+    /**
+     * Test if deleting category works
+     */
     public function testDeleteCategory() {
-        //$this->visit('/home')
-           // ->see('Category test 2')
-            //->click(['xpath' => '//div[@id="category_test"]/form/div/input[@value="Delete"]'])
-            //->click('//div[@id="category_test"]/form/div/input[@value="Delete"]')
-
-        //$this->click('edit_category_test')
-            //->see('Category deleted.');
-
-        //$this->action('CategoriesController@destroy', array('name' => 'Category test 2', 'slug' => 'category_test'));
-        //$this->action('POST', 'CategoriesController@destroy', array('slug' => 'category_test'));
-        //$this->route('home.destroy', ['slug' => 'category_test']);
-
         $this->withoutMiddleware();
-        $response = $this->call('DELETE', '/home/category_test');
+        $response = $this->call('DELETE', '/categories/category_test');
         $this->assertEquals(302, $response->getStatusCode());
-        $this->notSeeInDatabase('categories', ['slug' => 'category_test']);
+        $this->notSeeInDatabase('categories', ['slug' => 'category_test', 'name' => 'Category test 2']);
     }
 
     public function tearDown()
     {
-        $this->visit('/home')
-            ->click('Hello, testUser')
+        $this->visit('/dashboard')
+            ->click('Hello, test')
             ->click('Logout');
 
         parent::tearDown();
