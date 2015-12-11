@@ -2,6 +2,8 @@
 
 @include('layouts.home-nav')
 
+@section('title', 'Analytics')
+
 @include('layouts.sidebar')
 
 @section('content')
@@ -44,13 +46,6 @@
             </tr>
             </tbody>
         </table>
-
-
-        <script>
-
-        </script>
-
-
 
 
 

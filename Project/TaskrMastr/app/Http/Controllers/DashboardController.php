@@ -15,8 +15,12 @@ class DashboardController extends Controller
 {
 
     public function index() {
-        return view('dashboard.index', [
-            'name' => Auth::user()->name
-        ]);
+        if(Auth::user()) {
+            return view('dashboard.index', [
+                'name' => Auth::user()->name
+            ]);
+        }
+
+        return redirect('/auth/login');
     }
 }

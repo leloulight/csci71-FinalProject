@@ -24,7 +24,6 @@ class CategoriesController extends Controller
             'categories' => $categories,
             'name' => Auth::user()->name
         ]);
-
     }
 
 
@@ -52,7 +51,7 @@ class CategoriesController extends Controller
         Category::create( $input );
 
 
-        $data = array(
+        /*$data = array(
             'name' => Auth::user()->name,
         );
 
@@ -62,9 +61,7 @@ class CategoriesController extends Controller
 
             $message->to(Auth::user()->email)->subject('Category Created');
 
-        });
-
-
+        });*/
 
         return Redirect::route('categories.index')->with('message', 'Category created');
     }

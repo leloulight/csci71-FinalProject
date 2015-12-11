@@ -18,6 +18,19 @@
     {!! Form::textarea('description') !!}
 </div>
 
+
+<div class="form-group">
+    {!! Form::label('start', 'Start Date:') !!}
+    {!! Form::input('date', 'start') !!}
+</div>
+
+<div class="form-group">
+    {!! Form::label('end', 'End Date:') !!}
+    {!! Form::input('date', 'end') !!}
+</div>
+
+
+
 <div class="form-group">
     {!! Form::submit($submit_text) !!}
 </div>

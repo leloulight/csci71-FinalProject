@@ -2,6 +2,8 @@
 
 @include('layouts.home-nav')
 
+@section('title', 'Create Category')
+
 @include('layouts.sidebar')
 
 @section('content')

@@ -2,6 +2,8 @@
 
 @include('layouts.home-nav')
 
+@section('title', 'Category Tasks')
+
 @include('layouts.sidebar')
 
 @section('content')

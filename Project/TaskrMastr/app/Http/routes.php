@@ -26,6 +26,10 @@ Route::get('/calendar', 'CalendarController@index');
 Route::get('/analytics', 'AnalyticsController@index');
 
 
+Route::get('/home', function() {
+    return Redirect::intended('/');
+});
+
 
 Route::get('/', function () {
     if(Auth::check()) {
@@ -52,17 +56,7 @@ Route::post('auth/recover', 'Auth\RecoverController@postRecover');
 
 
 
-
-
-
-
-
-
-
-
-
-
-Route::get('sendemail', function () {
+/*Route::get('sendemail', function () {
 
     $data = array(
         'name' => "Learning Laravel",
@@ -79,7 +73,7 @@ Route::get('sendemail', function () {
     return "Your email has been sent successfully";
 
 });
-
+*/
 
 
 

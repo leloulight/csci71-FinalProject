@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Input;
 use Redirect;
 use Mail;
+use DB;
 
 class TasksController extends Controller {
     /**
@@ -16,10 +17,14 @@ class TasksController extends Controller {
      */
     public function index(Category $category)
     {
-        return view('tasks.index', [
-            'category' => $category,
-            'name' => Auth::user()->name
-        ]);
+        if(Auth::user()) {
+            return view('tasks.index', [
+                'category' => $category,
+                'name' => Auth::user()->name
+            ]);
+        }
+
+        return redirect('/auth/login');
     }
 
 
@@ -45,9 +50,10 @@ class TasksController extends Controller {
 
         $input = Input::all();
         $input['category_id'] = $category->id;
+        $input['user_id'] = Auth::user()->id;
         Task::create( $input );
 
-        $data = array(
+        /*$data = array(
             'name' => Auth::user()->name,
         );
 
@@ -58,7 +64,7 @@ class TasksController extends Controller {
             $message->to(Auth::user()->email)->subject('Task Created');
 
         });
-
+        */
 
 
         return Redirect::route('categories.show', $category->slug)->with('message', 'Task created.');
@@ -90,6 +96,7 @@ class TasksController extends Controller {
         $this->validate($request, $this->rules);
 
         $input = array_except(Input::all(), '_method');
+
         $task->update($input);
 
         return Redirect::route('categories.tasks.show', [$category->slug, $task->slug])->with('message', 'Task updated.');

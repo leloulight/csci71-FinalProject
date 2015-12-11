@@ -17,15 +17,6 @@ class EventModel extends Eloquent implements \MaddHatter\LaravelFullcalendar\Eve
     protected $dates = ['start', 'end'];
 
     /**
-     * Get the event's id number
-     *
-     * @return int
-     */
-    public function getId() {
-        return $this->id;
-    }
-
-    /**
      * Get the event's title
      *
      * @return string

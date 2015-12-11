@@ -23,12 +23,16 @@ class CreateCategoriesAndTasksTables extends Migration
 
         Schema::create('tasks', function(Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned()->default(0);
             $table->integer('category_id')->unsigned()->default(0);
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('name')->default('');
             $table->string('slug')->default('');
             $table->boolean('completed')->default(false);
             $table->text('description')->default('');
+            $table->date('start');
+            $table->date('end');
+            $table->string('allDay')->default('false');
             $table->timestamps();
         });
     }

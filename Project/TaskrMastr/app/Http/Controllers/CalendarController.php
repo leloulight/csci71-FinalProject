@@ -16,27 +16,41 @@ class CalendarController extends Controller
 
     public function index() {
 
-        $events = [];
+        if(Auth::user()) {
+
+            $events = [];
 
 
+            $array_events = DB::table('tasks')->where('user_id', '=', Auth::user()->id)->get();
 
-        $eloquentEvent = EventModel::first(); //EventModel implements MaddHatter\LaravelFullcalendar\Event
+            foreach($array_events as $e) {
+                //print_r($e);
+                //echo '<br>';
+                $events[] = \Calendar::event(
+                    $e->name,
+                    $e->allDay,
+                    $e->start,
+                    $e->end
+                );
+            }
 
-        $calendar = \Calendar::addEvents($events) //add an array with addEvents
-        ->addEvent($eloquentEvent, [ //set custom color fo this event
-            'color' => '#800',
-        ])->setOptions([ //set fullcalendar options
-            'firstDay' => 1
-        ])->setCallbacks([ //set fullcalendar callback options (will not be JSON encoded)
-            'viewRender' => 'function() {}'
-        ]);
+            $calendar = \Calendar::addEvents($events) //add an array with addEvents
+            ->setOptions([ //set fullcalendar options
+                'firstDay' => 1
+            ])->setCallbacks([ //set fullcalendar callback options (will not be JSON encoded)
+                'viewRender' => 'function() {}'
+            ]);
 
-        //return view('hello', compact('calendar'));
+            //return view('hello', compact('calendar'));
 
-        return view('calendar.index', [
-            'calendar' => $calendar,
-            'name' => Auth::user()->name
-        ]);
+            return view('calendar.index', [
+                'calendar' => $calendar,
+                'name' => Auth::user()->name
+            ]);
+        }
+
+        return redirect('/auth/login');
+
     }
 
 

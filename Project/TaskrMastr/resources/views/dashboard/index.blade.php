@@ -2,6 +2,8 @@
 
 @include('layouts.home-nav')
 
+@section('title', 'Dashboard')
+
 @include('layouts.sidebar')
 
 @section('content')

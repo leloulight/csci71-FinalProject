@@ -2,6 +2,8 @@
 
 @include('layouts.home-nav')
 
+@section('title', 'Calendar')
+
 @include('layouts.sidebar')
 
 @section('content')

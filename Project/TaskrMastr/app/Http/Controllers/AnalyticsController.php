@@ -16,9 +16,13 @@ class AnalyticsController extends Controller
 
     public function index() {
 
-        return view('analytics.index', [
-            'name' => Auth::user()->name
-        ]);
+        if(Auth::user()) {
+            return view('analytics.index', [
+                'name' => Auth::user()->name
+            ]);
+        }
+
+        return redirect('/auth/login');
     }
 
 
