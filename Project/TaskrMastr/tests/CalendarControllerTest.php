@@ -17,19 +17,36 @@ class CalendarControllerTest extends TestCase
     }
 
     /**
-     *
+     * Test create, view, and delete calendar event
      */
-    /*WRITE A TEST TO DO THE FOLLOWING:
-    1. Create a category
-    2. Create a task in that category
-        - specify a start and end date
-    3. visit the calendar page to see that task appears
-    4. delete task
-    5. delete category
-    */
     public function testCreateCalendarEvent() {
         $this->visit('/categories')
-            ->see('Create Category [+]');
+            ->see('Create Category [+]')
+            ->click('Create Category [+]')
+            ->type('Calendar test', 'name')
+            ->type('calendar_test', 'slug')
+            ->press('Create Category')
+
+            ->visit('/categories/calendar_test/tasks/create')
+            ->see('Create Task for Category')
+            ->type('Test task', 'name')
+            ->type('Task test', 'slug')
+            ->type('This is a calendar test task', 'description')
+            ->type(date("m/d/Y"), 'start')
+            ->type(date("m/d/Y"), 'end')
+            ->press('Create Task')
+            ->seePageIs('/categories/calendar_test')
+            ->see('Task created.')
+            ->see('Test Task')
+            ->visit('/calendar')
+            ->see('Test Task')
+            ->visit('/categories/calendar_test')
+            ->see('Test task')
+            ->press('Delete')
+            ->seePageIs('/categories/calendar_test')
+            ->see('Task deleted.')
+            ->withoutMiddleware()
+            ->call('DELETE', '/categories/calendar_test');
     }
 
 
