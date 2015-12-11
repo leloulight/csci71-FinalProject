@@ -29,19 +29,19 @@ class TasksControllerTest extends TestCase
      */
     public function testCreateTask() {
         //Create Category first. Notice it didn't work with the setup() & teardown() method since it execute before and after each test.
-        $this->visit('/home')
+        $this->visit('/categories')
             ->click('Create Category [+]')
             ->type('Category test', 'name')
             ->type('category_test', 'slug')
             ->press('Create Category')
 
-            ->visit('/home/category_test/tasks/create')
+            ->visit('/categories/category_test/tasks/create')
             ->see('Create Task for Category')
             ->type('Test task', 'name')
             ->type('Task test', 'slug')
             ->type('This is a test task', 'description')
             ->press('Create Task')
-            ->seePageIs('/home/category_test')
+            ->seePageIs('/categories/category_test')
             ->see('Task created.')
             ->see('Test Task');
     }
@@ -49,7 +49,7 @@ class TasksControllerTest extends TestCase
      * Test create invalid name task rules
      */
     public function testCreateInvalidNameTask() {
-        $this->visit('/home/category_test/tasks/create')
+        $this->visit('/categories/category_test/tasks/create')
             ->see('Create Task for Category')
             ->type('Task test', 'slug')
             ->type('This is a test task', 'description')
@@ -60,7 +60,7 @@ class TasksControllerTest extends TestCase
      * Test create invalid slug task rules
      */
     public function testCreateInvalidSlugTask() {
-        $this->visit('/home/category_test/tasks/create')
+        $this->visit('/categories/category_test/tasks/create')
             ->see('Create Task for Category')
             ->type('Test task', 'name')
             ->type('This is a test task', 'description')
@@ -71,7 +71,7 @@ class TasksControllerTest extends TestCase
      * Test create invalid description task rules
      */
     public function testCreateInvalidDescriptionTask() {
-        $this->visit('/home/category_test/tasks/create')
+        $this->visit('/categories/category_test/tasks/create')
             ->see('Create Task for Category')
             ->type('Test task', 'name')
             ->type('Task test', 'slug')
@@ -83,7 +83,7 @@ class TasksControllerTest extends TestCase
      */
     public function testViewInjection()
     {
-        $response = $this->call('GET', '/home/category_test');
+        $response = $this->call('GET', '/categories/category_test');
         $this->assertViewHas('category');
         $category = $response->original->getData()['category'];
         $this->assertInstanceOf('Illuminate\Database\Eloquent\Model', $category);
@@ -95,11 +95,11 @@ class TasksControllerTest extends TestCase
      * Edit the task
      */
     public function testEditTask() {
-        $this->visit('/home/category_test/tasks/Task%20test/edit')
+        $this->visit('/categories/category_test/tasks/Task%20test/edit')
             ->see('Edit Task:')
             ->type('This is an edited test task', 'description')
             ->press('Edit Task')
-            ->seePageIs('/home/category_test/tasks/Task%20test')
+            ->seePageIs('/categories/category_test/tasks/Task%20test')
             ->see('Task updated.')
             ->see('Test Task');
     }
@@ -107,11 +107,11 @@ class TasksControllerTest extends TestCase
      * Mark Task Completed
      */
     public function testCompletedTask() {
-        $this->visit('/home/category_test/tasks/Task%20test/edit')
+        $this->visit('/categories/category_test/tasks/Task%20test/edit')
             ->see('Edit Task:')
             ->check('completed')
             ->press('Edit Task')
-            ->seePageIs('/home/category_test/tasks/Task%20test')
+            ->seePageIs('/categories/category_test/tasks/Task%20test')
             ->see('Task updated.')
             ->see('Test Task');
     }
@@ -119,21 +119,21 @@ class TasksControllerTest extends TestCase
      * Delete the task
      */
     public function testDeleteTask() {
-        $this->visit('/home/category_test')
+        $this->visit('/categories/category_test')
             ->see('Test task')
             ->press('Delete')
-            ->seePageIs('/home/category_test')
+            ->seePageIs('/categories/category_test')
             ->see('Task deleted.')
 
             //Delete Category after deleting the task. Notice it didn't work with the setup() & teardown() method since it execute before and after each test.
             ->withoutMiddleware()
-            ->call('DELETE', '/home/category_test');
+            ->call('DELETE', '/categories/category_test');
     }
 
     public function tearDown()
     {
-        $this->visit('/home')
-            ->click('Hello, testUser')
+        $this->visit('/categories')
+            ->click('Hello, test')
             ->click('Logout');
 
         parent::tearDown();
