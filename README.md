@@ -1,6 +1,5 @@
 # CSCI E-71 Final Project
- 
-minor change - Lori build
+
 ### November 30 Update1
 URL of working product increment : http://taskrmastr.ddns.net  
 Code Coverage of working product increment : http://taskrmastr.ddns.net/coverage  
