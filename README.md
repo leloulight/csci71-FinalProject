@@ -1,4 +1,4 @@
-Testing automation of jenkinssss
+Testing automation
 
 # CSCI E-71 Final Project
 
