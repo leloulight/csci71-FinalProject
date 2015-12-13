@@ -1,7 +1,7 @@
 # CSCI E-71 Final Project
 
 ### November 30 Update
-URL of working product increment video : http://www.taskrmastr.ddns.net
+URL of working product increment video : http://taskrmastr.ddns.net
 
 
 
