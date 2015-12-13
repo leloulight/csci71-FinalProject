@@ -1,5 +1,7 @@
 # CSCI E-71 Final Project
 
+minor update
+
 ### November 30 Update
 URL of working product increment : http://taskrmastr.ddns.net  
 Code Coverage of working product increment : http://taskrmastr.ddns.net/coverage  
