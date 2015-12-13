@@ -1,9 +1,9 @@
 # CSCI E-71 Final Project
 
 ### November 30 Update
-URL of working product increment : http://taskrmastr.ddns.net
-Code Coverage of working product increment : http://taskrmastr.ddns.net/coverage
-Jenkins Automated Continuous Integration : http://taskrmastr.ddns.net:8080
+URL of working product increment : http://taskrmastr.ddns.net  
+Code Coverage of working product increment : http://taskrmastr.ddns.net/coverage  
+Jenkins Automated Continuous Integration : http://taskrmastr.ddns.net:8080  
 
 
 
