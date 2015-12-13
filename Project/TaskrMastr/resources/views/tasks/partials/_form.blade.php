@@ -20,12 +20,12 @@
 
 
 <div class="form-group">
-    {!! Form::label('start', 'Start Date: (mm/dd/yyy)') !!}
+    {!! Form::label('start', 'Start Date: (mm/dd/yyyy)') !!}
     {!! Form::input('date', 'start') !!}
 </div>
 
 <div class="form-group">
-    {!! Form::label('end', 'End Date: (mm/dd/yyy)') !!}
+    {!! Form::label('end', 'End Date: (mm/dd/yyyy)') !!}
     {!! Form::input('date', 'end') !!}
 </div>
 
