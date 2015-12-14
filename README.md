@@ -2,18 +2,19 @@
 # CSCI E-71 Final Project
 
 ### December 13 Update
-URL of working product increment : http://taskrmastr.ddns.net  
-Code Coverage of working product increment : http://taskrmastr.ddns.net:81/coverage  
-Jenkins Automated Continuous Integration : http://taskrmastr.ddns.net:8080  
+-- YouTube URL for quick review of our app: https://www.youtube.com/watch?v=85IL4pOFqtM (the final slides are self explanatory/no audio). Can speed up the final section because they are intended to be narrated (three slides). 
+-- URL of working product increment : http://taskrmastr.ddns.net  
+-- Code Coverage of working product increment : http://taskrmastr.ddns.net:81/coverage  
+-- Jenkins Automated Continuous Integration : http://taskrmastr.ddns.net:8080  
 
 Description of an automated CI/CD process:
--	Jenkins server hosted off Amazon AWS public server.
--	Jenkins job (CSCI_E-71_TaskrMastr_test) is triggered whenever code is pushed to Github repository. This is implemented with the help of Jenkins Github plugin.
--	Downloads code from remote repository on Github, and places it in a local to Jenkins server repository.
+-	Jenkins server is hosted on an Amazon AWS public Windows server.
+-	The Jenkins automated build (CSCI_E-71_TaskrMastr_test) is triggered whenever code is pushed to the GitHub repository. This is implemented with the help of the Jenkins GitHub plugin.
+-	Downloads code from remote repository on Github, and places it in a local on the Jenkins server repository.
 -	Run tests:
   - Generates test report in Jenkins 
   - Generates coverage report 
--	When tests are successful another Jenkins job is available (CSCI_E-71_TaskrMastr_deploy). When triggered application will be deployed to the webserver, and hence publically available. 
+-	When tests are successful, another Jenkins job is available (CSCI_E-71_TaskrMastr_deploy) to actually deploy the changes. When triggered, the application will be deployed to the webserver, and hence publically available. 
 
 
 ### November 30 Update
@@ -129,6 +130,16 @@ Other feedback is that they would like integration with Jira and would like to h
 The ways this new information impacted our PBIs is that we've moved the analytics tools a little farther down the list, and we've affirmed that text notifications indeed needs to remain in Sprint 3 because all stakeholders consider it essential. We also bumped "Set User Profile & Preferences" farther down the list because not all stakeholders consider this a necessary functionality. 
 
 *Note that either "Set user preferences" or "Sort list items" will be moved to Sprint 4 (hence the discrepancy in points allotted to that sprint versus actual points in user stories). We are meeting after class on Nov. 30 for our Sprint planning session and will decide as a team how best to proceed. 
+
+## **Feedback from Users after Sprint 2:**
+-- Analytics burndown tool: The stakeholders like the idea of our analytics tool; two of them have now viewed the visual on our application. They would like to see it after all features are working, but they like the concept as we've explained it. 
+
+-- Calendar: One stakeholder in particular, Karen Harris, had previously stated that she really had no use for a calendar, but she had assumed she'd have to manually update the calendar and found that idea wearisome. Now that she's seen it, however, she is really happy that tasks, given start and end dates, can appear automatically on the calendar. We did note a bug that needs fixed in our calendar, and that remains for next sprint. 
+
+-- Web conferencing
+One CEO friend really wants this feature and was the one to suggest it. This sprint I've spent time interviewing some of our other stakeholders as well, and they also think it is a cool idea. One stakeholder, Don the Harvard student (Greg Gerrein) feels it would be cool but would entail a lot of development. 
+
+-- At this point, we are not changing our product backlog except to prioritize debugging the calendar. The feedback we've received confirms that we're headed in the right direction. We had our notiications nearly completed but needed to stop that and work on hosting our app and other issues, so we weren't able to push either email or text notifications. Those, along with profile and preferences setup, would be pushed to sprint 4. We would, ideally, meet after class today to plan our next sprint. That's what we've been doing each sprint. 
 
 ## **Product Backlog**
 
