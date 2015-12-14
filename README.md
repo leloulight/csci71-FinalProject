@@ -1,4 +1,3 @@
-Minor update to test automation build.
 
 # CSCI E-71 Final Project
 
