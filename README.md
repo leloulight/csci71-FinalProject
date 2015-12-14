@@ -11,8 +11,8 @@ Description of an automated CI/CD process:
 -	Jenkins job (CSCI_E-71_TaskrMastr_test) is triggered whenever code is pushed to Github repository. This is implemented with the help of Jenkins Github plugin.
 -	Downloads code from remote repository on Github, and places it in a local to Jenkins server repository.
 -	Run tests:
-o	Generates test report in Jenkins 
-o	Generates coverage report 
+  - Generates test report in Jenkins 
+  - Generates coverage report 
 -	When tests are successful another Jenkins job is available (CSCI_E-71_TaskrMastr_deploy). When triggered application will be deployed to the webserver, and hence publically available. 
 
 
