@@ -7,7 +7,7 @@
 @section('content')
     <div class="jumbotron">
         <h1>Welcome to TaskrMastr!</h1>
-        <p>Revolutionizing the way you manage your tasks. testing</p>
+        <p>Revolutionizing the way you manage your tasks.</p>
     </div>
 
     <div class="container">
