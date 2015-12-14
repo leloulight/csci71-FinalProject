@@ -6,8 +6,8 @@
 
 @section('content')
     <div class="jumbotron">
-        <h1>Welcome to TaskrMastr testing!</h1>
-        <p>Revolutionizing the way you manage your tasks.</p>
+        <h1>Welcome to TaskrMastr!</h1>
+        <p>Revolutionizing the way you manage your tasks. testing</p>
     </div>
 
     <div class="container">
