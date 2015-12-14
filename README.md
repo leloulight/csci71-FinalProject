@@ -2,8 +2,6 @@
 # CSCI E-71 Final Project
 
 ### December 13 Update
--- YouTube URL for quick review of our app: https://www.youtube.com/watch?v=85IL4pOFqtM (the final slides are self explanatory/no audio). Can speed up the final section because they are intended to be narrated (three slides). 
-
 -- URL of working product increment : http://taskrmastr.ddns.net  
 
 -- Code Coverage of working product increment : http://taskrmastr.ddns.net:81/coverage  
