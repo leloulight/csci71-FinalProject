@@ -132,7 +132,7 @@ The ways this new information impacted our PBIs is that we've moved the analytic
 
 *Note that either "Set user preferences" or "Sort list items" will be moved to Sprint 4 (hence the discrepancy in points allotted to that sprint versus actual points in user stories). We are meeting after class on Nov. 30 for our Sprint planning session and will decide as a team how best to proceed. 
 
-## **Feedback from Users after Sprint 2:**
+## **Feedback from Users after Sprint 3:**
 -- Analytics burndown tool: The stakeholders like the idea of our analytics tool; two of them have now viewed the visual on our application. They would like to see it after all features are working, but they like the concept as we've explained it. 
 
 -- Calendar: One stakeholder in particular, Karen Harris, had previously stated that she really had no use for a calendar, but she had assumed she'd have to manually update the calendar and found that idea wearisome. Now that she's seen it, however, she is really happy that tasks, given start and end dates, can appear automatically on the calendar. We did note a bug that needs fixed in our calendar, and that remains for next sprint. 
